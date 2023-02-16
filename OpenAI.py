@@ -29,18 +29,11 @@ def generate_response(title, prompt):
         frequency_penalty=0.0,
         presence_penalty=0.0)
 
-    try:
-        answers[title] = openai_object["choices"][0]["text"].replace("\n", "").replace(",", ";")
+    answers[title] = openai_object["choices"][0]["text"].replace("\n", "").replace(",", ";")
 
-        print("title", title, "answer: " + answers[title])
-        investors = answers[title].split("Startup: ")[0].replace("Investors: ", "")
-        startup = answers[title].split("Startup: ")[1].split("Amount of Money Raised: ")[0]
-        money = answers[title].split("Amount of Money Raised: ")[1]
+    print("title", title, "answer: " + answers[title])
 
-        answers[title] = (investors, startup, money)
-        return answers[title]
-    except Exception:
-        pass
+    return answers[title]
 
 
 def write_to_file(answers):
@@ -57,7 +50,7 @@ def write_to_file(answers):
         headertext = "title,investors,startup,money raised\n"
         file.write(headertext)
         for title, answer in answers.items():
-            file.write(title.replace(",", ";") + "," + answer[0] + "," + answer[1] + "," + answer[2] + "\n")
+            file.write(title.replace(",", ";") + "," + answer + "\n")
     print("writing to file completed.")
 
 
@@ -73,7 +66,5 @@ def calculate(input_data):
         generate_response(title, prompt)
     print("calculation with openai GPT-3 done.\nWriting to file")
 
-        # schreibe die ergebnisse in eine datei
+    # schreibe die ergebnisse in eine datei
     write_to_file(answers)
-
-
