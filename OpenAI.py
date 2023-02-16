@@ -31,6 +31,7 @@ def generate_response(title, prompt):
 
     answers[title] = openai_object["choices"][0]["text"].replace("\n", "").replace(",", ";")
 
+    print("title", title, "answer: " + answers[title])
     investors = answers[title].split("Startup: ")[0].replace("Investors: ", "")
     startup = answers[title].split("Startup: ")[1].split("Amount of Money Raised: ")[0]
     money = answers[title].split("Amount of Money Raised: ")[1]
