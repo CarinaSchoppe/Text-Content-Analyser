@@ -1,3 +1,4 @@
+import csv
 import os
 
 import openai
@@ -40,19 +41,22 @@ def write_to_file(answers):
     except FileNotFoundError:
         pass
     # write the answers to a file
-    with open("answers.txt", "w", encoding="UTF-8") as file:
+    with open("answers.csv", "w", encoding="UTF-8") as file:
+        # write the dictionary into an csv file
+        writer = csv.writer(file)
+        headertext = "title;answer"
+        writer.writerow(headertext)
         for title, answer in answers.items():
-            file.write(title + ":\n")
-            file.write("     " + answer + "\n")
+            writer.writerow([title, answer])
 
 
-#berechnet und schreibt die analyse werte
+# berechnet und schreibt die analyse werte
 def calculate(input_data):
     if not use:
         return
-    #gehe durch alle ergebnisse durch und analysiere diese
+    # gehe durch alle ergebnisse durch und analysiere diese
     for title, text in input_data.items():
-        #packe den fragetext vor den infotext
+        # packe den fragetext vor den infotext
         prompt = pre_text + text
         #generiere die analyse
         generate_response(title, prompt)
