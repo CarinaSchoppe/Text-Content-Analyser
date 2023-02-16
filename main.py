@@ -1,20 +1,17 @@
 import ContentAnalysis as content_analysis
-import Scraper
-import Stanford as stanford
-import Transformer as transformer
 import OpenAI as ai
+import Scraper
+
 
 def main():
-    
     # anzahl Seiten auf eu startups die angeschaut werden sollen
     Scraper.look_out = 1
     Scraper.infinite = False  # sollen alle möglichen seiten durchsucht werden?
-    
-    
+
     # welche begriffe sollen in der stanford filterung bei den jeweiligen beziehungen mindestens vorhanden sein
-    #stanford.key_words = {"object": {"money", "company", "invest", "name"},
-                           # subject": {"money", "company", "name", "invest"},
-                          # "relation": {"invest", "raise", "funded", "funding"}}
+    # stanford.key_words = {"object": {"money", "company", "invest", "name"},
+    # subject": {"money", "company", "name", "invest"},
+    # "relation": {"invest", "raise", "funded", "funding"}}
     # Skip stanford analysis
     content_analysis.skip_stanford = True
     # welche beziehungen gibt es in der content_analysis analyse und welche begriffe sind dafür trigger und in welcher höufigkeit sollen diese existieren
@@ -24,9 +21,9 @@ def main():
     # content_analysis analyse und filter überspringen
     content_analysis.stanford_only = False
     # mehrfache abstufungen in elementen der beziehungen rausfiltern
-    #stanford.do_cleaning = True
+    # stanford.do_cleaning = True
     # stanford pure analysis without keywords
-    #stanford.without_keywords = False
+    # stanford.without_keywords = False
     # analysiere nur die wichtigen sätze für Stanford von der content_analysis
     content_analysis.stanford_only_sentences = True  # True = nimm den satz der z.B. bei investment: "...." steht bei False nimm den ganzen Absatz für Stanford
     """
@@ -43,15 +40,17 @@ def main():
     buch = Scraper.load_contents()  # dict header, items -> text
     # starte die analysen
     # Transformer
-    #transformer.transformer_analysis(buch)
+    # transformer.transformer_analysis(buch)
     # Contentbase
-    #use openAI GPT-3 Davinci Model
+    # OPENAI API KEY
+    ai.KEY = "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"
+    # use openAI GPT-3 Davinci Model
     ai.use = True
+    # startet die analyse durch openAI
     ai.calculate(buch)
 
     content_analysis.content_analysis(buch)
 
 
 if __name__ == "__main__":
-        main()
-
+    main()
