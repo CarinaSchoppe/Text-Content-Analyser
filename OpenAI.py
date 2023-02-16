@@ -29,15 +29,18 @@ def generate_response(title, prompt):
         frequency_penalty=0.0,
         presence_penalty=0.0)
 
-    answers[title] = openai_object["choices"][0]["text"].replace("\n", "").replace(",", ";")
+    try:
+        answers[title] = openai_object["choices"][0]["text"].replace("\n", "").replace(",", ";")
 
-    print("title", title, "answer: " + answers[title])
-    investors = answers[title].split("Startup: ")[0].replace("Investors: ", "")
-    startup = answers[title].split("Startup: ")[1].split("Amount of Money Raised: ")[0]
-    money = answers[title].split("Amount of Money Raised: ")[1]
+        print("title", title, "answer: " + answers[title])
+        investors = answers[title].split("Startup: ")[0].replace("Investors: ", "")
+        startup = answers[title].split("Startup: ")[1].split("Amount of Money Raised: ")[0]
+        money = answers[title].split("Amount of Money Raised: ")[1]
 
-    answers[title] = (investors, startup, money)
-    return answers[title]
+        answers[title] = (investors, startup, money)
+        return answers[title]
+    except Exception:
+        pass
 
 
 def write_to_file(answers):
