@@ -47,7 +47,7 @@ def write_to_file(answers):
     # write the answers to a file
     with open("answers.csv", "w", encoding="UTF-8") as file:
         # write the dictionary into an csv file
-        headertext = "title,investors,startup,money raised\n"
+        headertext = "Title,Text\n"
         file.write(headertext)
         for title, answer in answers.items():
             file.write(title.replace(",", ";") + "," + answer + "\n")
