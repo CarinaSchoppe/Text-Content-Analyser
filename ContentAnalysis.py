@@ -1,5 +1,6 @@
 import os
-import Stanford as stanford
+
+# import Stanford as stanford
 import cleaning
 
 words_to_contain = tuple()
@@ -56,5 +57,6 @@ def content_analysis(buch: dict):
 
     print("Content Analysis finished!\nFiles saved!")
     if not skip_stanford:
+        pass
         # fortfahren mit der stanford analyse
-        stanford.stanford_analysis(cleaning.sentence_creator(filtered_items, stanford_only_sentences, stanford_only))
+        #stanford.stanford_analysis(cleaning.sentence_creator(filtered_items, stanford_only_sentences, stanford_only))
