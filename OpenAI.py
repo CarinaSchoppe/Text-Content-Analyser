@@ -29,7 +29,7 @@ def generate_response(title, prompt):
         frequency_penalty=0.0,
         presence_penalty=0.0)
 
-    answers[title] = openai_object["choices"][0]["text"].replace("\n", "")
+    answers[title] = openai_object["choices"][0]["text"].replace("\n", "").replace(",", ";")
 
     investors = answers[title].split("Startup: ")[0].replace("Investors: ", "")
     startup = answers[title].split("Startup: ")[1].split("Amount of Money Raised: ")[0]
@@ -50,10 +50,10 @@ def write_to_file(answers):
     # write the answers to a file
     with open("answers.csv", "w", encoding="UTF-8") as file:
         # write the dictionary into an csv file
-        headertext = "title;investors;startup;money raised\n"
+        headertext = "title,investors,startup,money raised\n"
         file.write(headertext)
         for title, answer in answers.items():
-            file.write(title + ";" + answer[0] + ";" + answer[1] + ";" + answer[2] + "\n")
+            file.write(title.replace(",", ";") + "," + answer[0] + "," + answer[1] + "," + answer[2] + "\n")
 
 
 input = {"INFOTEXT": """Polish startup Plenti picks up €5 million to build rental and subscription marketplace for electronic devices
