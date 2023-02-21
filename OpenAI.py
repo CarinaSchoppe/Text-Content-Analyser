@@ -7,7 +7,7 @@ use = True
 # boolean ob das system die daten in eine datei schreiben soll
 write_to_file = True
 # API KEY für OPENAI
-KEY = "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"
+KEY = ""
 # API KEY für OPENAI
 openai.api_key = KEY
 
