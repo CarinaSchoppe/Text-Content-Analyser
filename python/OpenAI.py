@@ -45,7 +45,7 @@ def write_to_file(answers):
     except FileNotFoundError:
         pass
     # write the answers to a file
-    with open("answers.csv", "w", encoding="UTF-8") as file:
+    with open("../answers.csv", "w", encoding="UTF-8") as file:
         # write the dictionary into an csv file
         headertext = "Title,Text\n"
         file.write(headertext)

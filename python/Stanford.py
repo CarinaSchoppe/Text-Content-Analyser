@@ -1,5 +1,7 @@
 import os
+
 from openie import StanfordOpenIE  # pip install pyopenie
+
 import cleaning
 
 do_cleaning = False

@@ -27,14 +27,14 @@ def content_analysis(buch: dict):
     # entfernen der alten datei falls vorhanden
     try:
         print("removed old file in content analysis output")
-        os.remove("scraped.txt")
+        os.remove("../scraped.txt")
     except FileNotFoundError:
         pass
 
     print(filtered_items)
 
     # schreiben der ergebnisse in eine datei
-    with open("scraped.txt", "w", encoding="UTF-8") as file:
+    with open("../scraped.txt", "w", encoding="UTF-8") as file:
         for header in filtered_items:
             file.write(f"{header}\n\n")
             for absatz, object in filtered_items[header].items():
