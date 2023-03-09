@@ -21,10 +21,10 @@ answers = dict()
 # funktion die den response über openai generiert
 def generate_response(title, prompt):
     openai_object = openai.Completion.create(
-        model="text-davinci-003",
+        model="gpt-3.5-turbo",
         prompt=prompt,
         temperature=0,
-        max_tokens=2048,
+        max_tokens=4096,
         top_p=1.0,
         frequency_penalty=0.0,
         presence_penalty=0.0)
@@ -64,7 +64,7 @@ def calculate(input_data):
         prompt = pre_text + title + text
         # generiere die analyse
         generate_response(title, prompt)
-    print("calculation with openai GPT-3 done.\nWriting to file")
+    print("calculation with openai GPT-3.5-turbo done.\nWriting to file")
 
     # schreibe die ergebnisse in eine datei
     write_to_file(answers)

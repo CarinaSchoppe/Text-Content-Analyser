@@ -43,7 +43,7 @@ def main():
     # transformer.transformer_analysis(buch)
     # Contentbase
     # OPENAI API KEY
-    ai.KEY = ""
+    ai.KEY = "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"
     # use openAI GPT-3 Davinci Model
     ai.use = True
     # startet die analyse durch openAI
