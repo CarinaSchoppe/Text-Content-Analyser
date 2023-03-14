@@ -89,6 +89,8 @@ def convert_chat_gpt_answer(input: str, output: str):
 
 
 def file_saver(text, document):
+    if text == "":
+        return
     with open(f"../documents/results/{document}.csv", "a", encoding="UTF-8") as file:
         file.write(text + "\n")
 
