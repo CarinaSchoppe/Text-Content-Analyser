@@ -11,14 +11,14 @@ debug = False
 dict_answers = dict()
 
 
-def extract_values_from_file(filepath, path="../documents/xmi/"):
+def extract_values_from_file(file, path="../documents/xmi/"):
     """
     dict_ent -> "text" -> dict -> "id" ->  value
     dict_sem -> "text" -> dict -> "id" -> (object, relation, value)
     """
-    tree = elementtree.parse(path + filepath)
+    tree = elementtree.parse(path + file)
     root = tree.getroot()
-    file_text = "".join(open(path + filepath, "r", encoding="UTF-8").readlines()).split('sofaString="')[1].split('"')[0]
+    file_text = "".join(open(path + file, "r", encoding="UTF-8").readlines()).split('sofaString="')[1].split('"')[0]
     dict_entity[file_text] = dict()
     dict_semantic[file_text] = dict()
     # extraction of entities
@@ -65,11 +65,10 @@ def format_converter(semantic_dict, document):
 
 def convert_chat_gpt_answer(input: str, output: str):
     # answer format = (Ent; relation; entity)
-    # convert into differeent variables
+    # convert into different variables
     answers = output.split("\n")
     for answer in answers:
         try:
-
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
 
@@ -130,7 +129,6 @@ Analyse this text:""", postfix="""just give the answers in the matching format a
         messages=[{"role": "user", "content": prefix + input_text + postfix}]
     )
     answer = completion.choices[0]["message"]["content"]
-    print(f"AI ANSWER: {answer}")
     convert_chat_gpt_answer(input=input_text, output=answer)
 
 
