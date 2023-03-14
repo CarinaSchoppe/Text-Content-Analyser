@@ -188,6 +188,11 @@ def main():
     format_converter(dict_answers, "ai_results")
     print("code completed")
 
+    if debug:
+        print("Start of evaluation")
+    import Text_Evaluation as txt_eval
+    txt_eval.evaluate()
+
 
 if __name__ == "__main__":
     main()
