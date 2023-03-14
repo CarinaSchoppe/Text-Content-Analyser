@@ -84,10 +84,13 @@ def convert_chat_gpt_answer(input: str, output: str):
                 input_dict = dict()
                 input_dict[0] = (first_entity, relation, second_entity)
                 dict_answers[input] = input_dict
+
+            if debug:
+                print("worked", "input:", input, "answer:", answer)
         except Exception as exception:
             print(exception)
-        #  print(f"because: answer from chat gpt was not in the right format, format: {output}")
-
+            print(f"because: answer from chat gpt was not in the right format, format: {output}")
+            exit()
 
 def file_saver(text, document):
     if text == "" or text == " " or text == "\n" or text is None:
