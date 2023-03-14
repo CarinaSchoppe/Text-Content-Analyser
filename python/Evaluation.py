@@ -81,9 +81,12 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             valid_answers.append((first_entity, relation, second_entity))
 
         except Exception as exception:
+            print("---------------------------------------------------------------------------")
             print(exception)
             valid = False
             print(f"because: answer from chat gpt was not in the right format, format: {output}")
+            print(f"input was: {input_text}")
+            print("---------------------------------------------------------------------------")
             break
     if valid:
         for answer in valid_answers:
