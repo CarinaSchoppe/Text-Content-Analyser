@@ -1,0 +1,9154 @@
+[
+  [
+    [
+      {
+        "head": "Getsafe",
+        "type": "RECEIVES",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Earlybird",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "CommerzVentures",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "other existing investors",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      }
+    ],
+    [
+      {
+        "head": "Getsafe",
+        "type": "RECEIVES",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Earlybird",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "CommerzVentures",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "existing investors",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Orderchamp",
+        "type": "RECEIVES",
+        "tail": "\u20ac16.6 million"
+      },
+      {
+        "head": "Prime Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac16.6 million"
+      },
+      {
+        "head": "henQ",
+        "type": "INVESTS",
+        "tail": "\u20ac16.6 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac16.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "MultiTaction",
+        "type": "RECEIVES",
+        "tail": "\u20ac7million"
+      },
+      {
+        "head": "Harbert European Growth Capital Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac7million"
+      }
+    ],
+    [
+      {
+        "head": "MultiTaction",
+        "type": "RECEIVES",
+        "tail": "\u20ac7million"
+      },
+      {
+        "head": "Harbert European Growth Capital Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac7million"
+      },
+      {
+        "head": "MultiTaction",
+        "type": "RECEIVES",
+        "tail": "\u20ac7million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "SendCloud",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "TIIN Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Brabant Development Agency",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Fastic",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.3 million"
+      },
+      {
+        "head": "Rolf Schr\u00f6mgens",
+        "type": "INVESTS",
+        "tail": "\u20ac4.3 million"
+      },
+      {
+        "head": "Robin Behlau",
+        "type": "INVESTS",
+        "tail": "\u20ac4.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Goodiebox",
+        "type": "RECEIVES",
+        "tail": "\u20ac5,7 million"
+      },
+      {
+        "head": "InQvation",
+        "type": "INVESTS",
+        "tail": "\u20ac5,7 million"
+      },
+      {
+        "head": "The Danish Growth Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac5,7 million"
+      }
+    ],
+    [
+      {
+        "head": "Goodiebox",
+        "type": "RECEIVES",
+        "tail": "\u20ac5,7 million"
+      },
+      {
+        "head": "InQvation",
+        "type": "INVESTS",
+        "tail": "\u20ac5,7 million"
+      },
+      {
+        "head": "Danish Growth Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac5,7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "SponsorPay",
+        "type": "RECEIVES",
+        "tail": "$5 million"
+      },
+      {
+        "head": "Nokia Growth Partners",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      },
+      {
+        "head": "existing investors",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      }
+    ],
+    [
+      {
+        "head": "SponsorPay",
+        "type": "RECEIVES",
+        "tail": "$5 million"
+      },
+      {
+        "head": "Nokia Growth Partners",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Videdressing.com",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Earlybird",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Piton Capital",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Generis Capital",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      }
+    ],
+    [
+      {
+        "head": "Videdressing.com",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Earlybird",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Piton Capital",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Generis Capital",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Videdressing.com",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Genie AI",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "Connect Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "UK Research and Innovation",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      }
+    ],
+    [
+      {
+        "head": "SuperDrafter",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "Connect Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "UK Research and Innovation",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "4Stop",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Ventech",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Carvolution",
+        "type": "RECEIVES",
+        "tail": "\u20ac10.4 million"
+      },
+      {
+        "head": "Redalpine",
+        "type": "INVESTS",
+        "tail": "\u20ac10.4 million"
+      },
+      {
+        "head": "Mobiliar",
+        "type": "INVESTS",
+        "tail": "\u20ac10.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Recart",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Lead Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Oktogon Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Day One Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Recart",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Enter Tomorrow",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Lead Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Oktogon Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Day One Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Recart",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Enter Tomorrow",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Lead Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Oktogon Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Day One Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Tractive",
+        "type": "RECEIVES",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Guidepost Growth Equity",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Chris Cavanagh",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Andrew Wait",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Attila Balogh",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      }
+    ],
+    [
+      {
+        "head": "Tractive",
+        "type": "RECEIVES",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Guidepost Growth Equity",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Chris Cavanagh",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      },
+      {
+        "head": "Attila Balogh",
+        "type": "INVESTS",
+        "tail": "\u20ac28.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Lottie",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Kindred",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "David Wascha",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Caroline Hudack",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Tom Blomfield",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Victoria van Lennep",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      }
+    ],
+    [
+      {
+        "head": "Lottie",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Kindred",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "David Wascha",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Caroline Hudack",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Tom Blomfield",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      }
+    ],
+    [
+      {
+        "head": "Lottie",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Kindred",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "David Wascha",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      },
+      {
+        "head": "Caroline Hudack",
+        "type": "INVESTS",
+        "tail": "\u20ac2.98 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Anorak",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Outward VC",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Triple Point Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Kamet Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Nic Kohler",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Paul Evans",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Charlie Delingpole",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Will Neale",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Anorak",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Outward VC",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Triple Point Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Kamet Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Nic Kohler",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Paul Evans",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Charlie Delingpole",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "ParkBee",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Statkraft Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "existing investors",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "ParkBee",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Statkraft Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "Statkraft Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "ParkBee",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Blueprint Genetics",
+        "type": "RECEIVES",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Creathor Venture",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "MedTech Innovation Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Pontos Group",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      }
+    ],
+    [
+      {
+        "head": "Blueprint Genetics",
+        "type": "RECEIVES",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Creathor Venture",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "MedTech Innovation Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Pontos Group",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Blueprint Genetics",
+        "type": "RECEIVES",
+        "tail": "\u20ac14 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "NavVis",
+        "type": "RECEIVES",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "Target Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "Don Dodge",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "MIG Fonds",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "BayBG",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      }
+    ],
+    [
+      {
+        "head": "NavVis",
+        "type": "RECEIVES",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "Target Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "Don Dodge",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "BayBG",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      },
+      {
+        "head": "MIG Fonds",
+        "type": "INVESTS",
+        "tail": "\u20ac7.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Locatee",
+        "type": "RECEIVES",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "SmartFin",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Z\u00fcrcher Kantonalbank",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Swiss Immo Lab",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Verve Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "FYRFLY Venture Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      }
+    ],
+    [
+      {
+        "head": "Locatee",
+        "type": "RECEIVES",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "SmartFin",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Z\u00fcrcher Kantonalbank",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Swiss Immo Lab",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Verve Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "FYRFLY Venture Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Tomahawk Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Midaxo",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "EOC Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Finnish Industry Investments",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      }
+    ],
+    [
+      {
+        "head": "Midaxo",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "EOC Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Finnish Industry Investments",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Midaxo",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Brand a Trend",
+        "type": "RECEIVES",
+        "tail": "$4.5 million"
+      },
+      {
+        "head": "family offices",
+        "type": "INVESTS",
+        "tail": "$4.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Brand a Trend",
+        "type": "RECEIVES",
+        "tail": "$4.5 million"
+      },
+      {
+        "head": "two unnamed European family offices",
+        "type": "INVESTS",
+        "tail": "$4.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Brand a Trend",
+        "type": "RECEIVES",
+        "tail": "$4.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Meero",
+        "type": "RECEIVES",
+        "tail": "\u20ac205 million"
+      },
+      {
+        "head": "Eurazeo Growth",
+        "type": "INVESTS",
+        "tail": "\u20ac205 million"
+      },
+      {
+        "head": "Prime Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac205 million"
+      }
+    ],
+    [
+      {
+        "head": "Prime Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac205 million"
+      },
+      {
+        "head": "Eurazeo Growth",
+        "type": "INVESTS",
+        "tail": "\u20ac205 million"
+      },
+      {
+        "head": "Meero",
+        "type": "RECEIVES",
+        "tail": "\u20ac205 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Stravito",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.6 million"
+      },
+      {
+        "head": "henQ",
+        "type": "INVESTS",
+        "tail": "\u20ac5.6 million"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "\u20ac5.6 million"
+      },
+      {
+        "head": "Creades",
+        "type": "INVESTS",
+        "tail": "\u20ac5.6 million"
+      }
+    ],
+    [
+      {
+        "head": "Stravito\u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.6 million"
+      },
+      {
+        "head": "henQ",
+        "type": "INVESTS",
+        "tail": "\u20ac5.6 million"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "\u20ac5.6 million"
+      },
+      {
+        "head": "Creades",
+        "type": "INVESTS",
+        "tail": "\u20ac5.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Peak",
+        "type": "RECEIVES",
+        "tail": "\u20ac11.8 million"
+      },
+      {
+        "head": "MMC Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac11.8 million"
+      },
+      {
+        "head": "Praetura Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac11.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Lunar Way",
+        "type": "RECEIVES",
+        "tail": "\u20ac26 million"
+      },
+      {
+        "head": "SEED Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac26 million"
+      },
+      {
+        "head": "Danish Financial Supervisory Authority",
+        "type": "INVESTS",
+        "tail": "\u20ac26 million"
+      }
+    ],
+    [
+      {
+        "head": "Lunar Way",
+        "type": "RECEIVES",
+        "tail": "\u20ac26 million"
+      },
+      {
+        "head": "SEED Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac26 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Streetbees",
+        "type": "RECEIVES",
+        "tail": "\u20ac34 million"
+      },
+      {
+        "head": "Lakestar",
+        "type": "INVESTS",
+        "tail": "\u20ac34 million"
+      },
+      {
+        "head": "LocalGlobe",
+        "type": "INVESTS",
+        "tail": "\u20ac34 million"
+      },
+      {
+        "head": "Atomico",
+        "type": "INVESTS",
+        "tail": "\u20ac34 million"
+      },
+      {
+        "head": "GMG Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac34 million"
+      },
+      {
+        "head": "Octopus",
+        "type": "INVESTS",
+        "tail": "\u20ac34 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Next Station",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Cabiedes and Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Denis Fayolle",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Next Station",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Cabiedes and Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Denis Fayolle",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Next Station",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Cabiedes",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Denis Fayolle",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Lieferheld",
+        "type": "RECEIVES",
+        "tail": "4 millionEuro"
+      },
+      {
+        "head": "Tengelmann",
+        "type": "INVESTS",
+        "tail": "4 millionEuro"
+      },
+      {
+        "head": "Team Europe Ventures",
+        "type": "INVESTS",
+        "tail": "4 millionEuro"
+      },
+      {
+        "head": "Holzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "4 millionEuro"
+      }
+    ],
+    [
+      {
+        "head": "Team Europe Ventures",
+        "type": "INVESTS",
+        "tail": "4 millionEuro"
+      },
+      {
+        "head": "Holzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "4 millionEuro"
+      },
+      {
+        "head": "Lieferheld.de",
+        "type": "RECEIVES",
+        "tail": "4 millionEuro"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Insurello",
+        "type": "RECEIVES",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Luminar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      }
+    ],
+    [
+      {
+        "head": "Insurello",
+        "type": "RECEIVES",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Luminar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "\u20ac7.1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "FinLeap",
+        "type": "RECEIVES",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "SIGNAL IDUNA",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "SBI Group",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "NIBC Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Hannover Re",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      }
+    ],
+    [
+      {
+        "head": "FinLeap",
+        "type": "RECEIVES",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "SIGNAL IDUNA",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "SBI Group",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "NIBC Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Hannover Re",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      }
+    ],
+    [
+      {
+        "head": "FinLeap",
+        "type": "RECEIVES",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "SIGNAL IDUNA",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "SBI Group",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "NIBC Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Agorize\u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac13 million"
+      },
+      {
+        "head": "Creadev",
+        "type": "INVESTS",
+        "tail": "\u20ac13 million"
+      },
+      {
+        "head": "Sofiouest",
+        "type": "INVESTS",
+        "tail": "\u20ac13 million"
+      },
+      {
+        "head": "Iris Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac13 million"
+      },
+      {
+        "head": "Capnamic Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac13 million"
+      }
+    ],
+    [
+      {
+        "head": "Agorize\u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac300k"
+      },
+      {
+        "head": "Creadev",
+        "type": "INVESTS",
+        "tail": "\u20ac300k"
+      },
+      {
+        "head": "Sofiouest",
+        "type": "INVESTS",
+        "tail": "\u20ac300k"
+      },
+      {
+        "head": "Iris Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac300k"
+      },
+      {
+        "head": "Capnamic Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac300k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "ecoligo",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Saxovent",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "InnoEnergy",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      }
+    ],
+    [
+      {
+        "head": "ecoligo",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Saxovent",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Vira Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac10.9 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10.9 million"
+      },
+      {
+        "head": "Optum Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10.9 million"
+      }
+    ],
+    [
+      {
+        "head": "Vira Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac10.9 million"
+      },
+      {
+        "head": "Optum Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10.9 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Scapin\u2019",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Creandum",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Klarna",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "iZettle",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Depop",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Kry/Livi",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      }
+    ],
+    [
+      {
+        "head": "Scapin\u2019",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Creandum",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Klarna",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "iZettle",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Depop",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Kry/Livi",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Heartcore Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Photoslurp",
+        "type": "RECEIVES",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "Bankinter VC",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "Caixa Capital Risc",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "ICF",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      }
+    ],
+    [
+      {
+        "head": "Photoslurp",
+        "type": "RECEIVES",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "Inveready Technology Investment Group",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "Bankinter VC",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "Caixa Capital Risc",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      },
+      {
+        "head": "ICF",
+        "type": "INVESTS",
+        "tail": "\u20ac750.000"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Taxdoo",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Visionaries Club",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "20VC",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "HTGF",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ],
+    [
+      {
+        "head": "Taxdoo",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Visionaries Club",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "HTGF",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Medherant",
+        "type": "RECEIVES",
+        "tail": "\u00a3650,000"
+      },
+      {
+        "head": "Mercia Technologies PLC",
+        "type": "INVESTS",
+        "tail": "\u00a3650,000"
+      }
+    ],
+    [
+      {
+        "head": "Medherant",
+        "type": "RECEIVES",
+        "tail": "\u00a3650,000"
+      },
+      {
+        "head": "Mercia Technologies PLC.",
+        "type": "INVESTS",
+        "tail": "\u00a3650,000"
+      }
+    ],
+    [
+      {
+        "head": "Medherant",
+        "type": "RECEIVES",
+        "tail": "\u00a31.5 million"
+      },
+      {
+        "head": "Mercia Technologies PLC",
+        "type": "INVESTS",
+        "tail": "\u00a31.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "IMMO",
+        "type": "RECEIVES",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Talis Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "HV Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Tom Stafford",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Rahul Mehta",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "Mato Peric",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      }
+    ],
+    [
+      {
+        "head": "IMMO",
+        "type": "RECEIVES",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "FinTech Collective",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Surplus Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Talis Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "HV Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Tom Stafford",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Rahul Mehta",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      }
+    ],
+    [
+      {
+        "head": "IMMO",
+        "type": "RECEIVES",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Talis Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "HV Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Surplus Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Tom Stafford",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Rahul Mehta",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Mato Peric",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Seedrs equity crowdfunding campaign",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "Sion",
+        "type": "RECEIVES",
+        "tail": "\u20ac6 million"
+      }
+    ],
+    [
+      {
+        "head": "Seedrs equity crowdfunding campaign",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      }
+    ],
+    [
+      {
+        "head": "Seedrs equity crowdfunding campaign",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "Sono Motors GmbH",
+        "type": "RECEIVES",
+        "tail": "\u20ac6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "SWORD Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Khosla Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ],
+    [
+      {
+        "head": "SWORD Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Khosla Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "other business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ],
+    [
+      {
+        "head": "SWORD Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Khosla Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "existing investors",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Cosaporto",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "Peggy Porschen",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "Unico Gelato",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "NIO Cocktails",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "Maison Samadi",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Cosaporto",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "Unico Gelato",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "NIO Cocktails",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      },
+      {
+        "head": "Maison Samadi",
+        "type": "INVESTS",
+        "tail": "\u20ac1.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Bryter",
+        "type": "RECEIVES",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Notion Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Dawn Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      }
+    ],
+    [
+      {
+        "head": "Bryter",
+        "type": "RECEIVES",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Dawn Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      }
+    ],
+    [
+      {
+        "head": "Bryter",
+        "type": "RECEIVES",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Notion Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Dawn Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      },
+      {
+        "head": "Mike Chalfen Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac14.1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Bota Systems",
+        "type": "RECEIVES",
+        "tail": "\u20ac150K"
+      },
+      {
+        "head": "Venture Kick",
+        "type": "INVESTS",
+        "tail": "\u20ac150K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Cognism",
+        "type": "RECEIVES",
+        "tail": "\u20ac10.5 million"
+      },
+      {
+        "head": "AXA Venture Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac10.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Cognism",
+        "type": "RECEIVES",
+        "tail": "\u20ac8.8 million"
+      },
+      {
+        "head": "AXA Venture Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac8.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Spill",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Ada Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "GuruCall",
+        "type": "RECEIVES",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "F\u00e9lix Ruiz",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Paco Avila",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Hugo Arevalo",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      }
+    ],
+    [
+      {
+        "head": "GuruCall",
+        "type": "RECEIVES",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Spanish family office",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "F\u00e9lix Ruiz",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Paco Avila",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Hugo Arevalo",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "realxdata GmbH",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Ventech",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "realxdata GmbH",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Ventech",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "SIGNA Innovations",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "N26",
+        "type": "RECEIVES",
+        "tail": "$160 million"
+      },
+      {
+        "head": "Allianz X",
+        "type": "INVESTS",
+        "tail": "$160 million"
+      },
+      {
+        "head": "Tencent",
+        "type": "INVESTS",
+        "tail": "$160 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Pennylane",
+        "type": "RECEIVES",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Partech",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Partech",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      }
+    ],
+    [
+      {
+        "head": "Pennylane",
+        "type": "RECEIVES",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Partech",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      },
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Tuum",
+        "type": "RECEIVES",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Portage Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Blackfin Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Karma Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      }
+    ],
+    [
+      {
+        "head": "Tuum",
+        "type": "RECEIVES",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Blackfin Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      },
+      {
+        "head": "Karma Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac15 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Habyt",
+        "type": "RECEIVES",
+        "tail": "\u20ac20 million"
+      }
+    ],
+    [
+      {
+        "head": "Habyt",
+        "type": "RECEIVES",
+        "tail": "\u20ac20 million"
+      },
+      {
+        "head": "Habt",
+        "type": "RECEIVES",
+        "tail": "\u20ac20 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Pigment",
+        "type": "RECEIVES",
+        "tail": "\u20ac63.7 million"
+      },
+      {
+        "head": "Greenoaks",
+        "type": "INVESTS",
+        "tail": "\u20ac63.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Lumos Apps",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Breega",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Bpifrance",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Treon",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Ventech",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ],
+    [
+      {
+        "head": "Treon",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Ventech",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ],
+    [
+      {
+        "head": "Treon",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Ventech",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Genially",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "645 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Brighteye Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "JME Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "GP Bullhound",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "FJLab",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Market One Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "s16VC",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Kahoot founders",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ],
+    [
+      {
+        "head": "Genially",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "645 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Brighteye Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "s16VC",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Kahoot founders",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "GP Bullhound",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "FJLab",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Market One Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Athos Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ],
+    [
+      {
+        "head": "Genially",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "645 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Brighteye Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "s16VC",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Kahoot founders",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Spotcap",
+        "type": "RECEIVES",
+        "tail": "\u20ac14 million"
+      }
+    ],
+    [
+      {
+        "head": "Spotcap",
+        "type": "RECEIVES",
+        "tail": "\u20ac14 million"
+      },
+      {
+        "head": "New Zealand bank",
+        "type": "INVESTS",
+        "tail": "\u20ac14 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Riverlane",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Cambridge Innovation Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Amadeus Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      }
+    ],
+    [
+      {
+        "head": "Cambridge Innovation Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Amadeus Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Riverlane",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.7 million"
+      }
+    ],
+    [
+      {
+        "head": "Riverlane",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Cambridge Innovation Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Amadeus Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      },
+      {
+        "head": "Cambridge Enterprise",
+        "type": "INVESTS",
+        "tail": "\u20ac3.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ],
+    [
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS <triplet>QueryLayer",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      }
+    ],
+    [
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "queryLayer",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "mention",
+        "type": "RECEIVES",
+        "tail": "$600K\u20ac"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "$600K\u20ac"
+      },
+      {
+        "head": "Point Nine Capital",
+        "type": "INVESTS",
+        "tail": "$600K\u20ac"
+      }
+    ],
+    [
+      {
+        "head": "mention",
+        "type": "RECEIVES",
+        "tail": "$600K"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "$600K"
+      },
+      {
+        "head": "Point Nine Capital",
+        "type": "INVESTS",
+        "tail": "$600K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Polarsteps",
+        "type": "RECEIVES",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "INKEF Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      }
+    ],
+    [
+      {
+        "head": "Polarsteps",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.6 million"
+      },
+      {
+        "head": "INKEF Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Unicafpartners",
+        "type": "RECEIVES",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "Goldman Sachs",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "CDC Group",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "University Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "Edex",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      }
+    ],
+    [
+      {
+        "head": "Unicaf",
+        "type": "RECEIVES",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "Goldman Sachs",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "CDC Group",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "University Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      },
+      {
+        "head": "Edex",
+        "type": "INVESTS",
+        "tail": "\u20ac25 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "HousingAnywhere.com",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Real Web",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "henQ",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "HousingAnywhere.com",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Real Web",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "henQ",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "HousingAnywhere.com",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Silent Circle",
+        "type": "RECEIVES",
+        "tail": "$50 million"
+      },
+      {
+        "head": "Santander Bank",
+        "type": "INVESTS",
+        "tail": "$50 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Payflow",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Rocket Internet",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Lanai Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Itnig",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Abac Nest",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Michael Benabou",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      },
+      {
+        "head": "Clement Benoit",
+        "type": "INVESTS",
+        "tail": "\u20ac1.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Preply",
+        "type": "RECEIVES",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Full In Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Point Nine Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "All Iron",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Niklas Ostberg",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Arthur Kosten",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "David Helgason",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Gary Swart",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      }
+    ],
+    [
+      {
+        "head": "Preply",
+        "type": "RECEIVES",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Full In Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Point Nine Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      },
+      {
+        "head": "All Iron",
+        "type": "INVESTS",
+        "tail": "\u20ac29.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "SteadySense",
+        "type": "RECEIVES",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "eQventure",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Legl",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Backed",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Samaipata",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "First Round Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "CarlosGonzalez-Cadenas",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Legl",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Backed",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Samaipata",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "First Round Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "CarlosGonzalez-Cadenas",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Al Giles",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Hayden Brown",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Nextail",
+        "type": "RECEIVES",
+        "tail": "$10 million"
+      },
+      {
+        "head": "KEEN Venture Partners",
+        "type": "INVESTS",
+        "tail": "$10 million"
+      },
+      {
+        "head": "Sonae Investment Management",
+        "type": "INVESTS",
+        "tail": "$10 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "$10 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Bdeo",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "BlackFin",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "K Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Big Sur Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "Bdeo",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "BlackFin",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "K Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Big Sur Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Open Mineral",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.8 million"
+      },
+      {
+        "head": "Emerald Technology Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.8 million"
+      },
+      {
+        "head": "Igor Kim",
+        "type": "INVESTS",
+        "tail": "\u20ac4.8 million"
+      },
+      {
+        "head": "Goldcorp",
+        "type": "INVESTS",
+        "tail": "\u20ac4.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Groupalia",
+        "type": "RECEIVES",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Caixa Capital Risc",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "General Atlantic",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Insight Venture Partners",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Index Ventures",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      }
+    ],
+    [
+      {
+        "head": "Groupalia",
+        "type": "RECEIVES",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Caixa Capital Risc",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "General Atlantic",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Insight Venture Partners",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Index Ventures",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      },
+      {
+        "head": "others",
+        "type": "INVESTS",
+        "tail": "$26 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Mogees",
+        "type": "RECEIVES",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "LSG Ventures",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "Elio Leoni Sceti",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "Haim Perry",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "Eric Nicoli CBE",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "The Tussauds Group Ltd",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      }
+    ],
+    [
+      {
+        "head": "Mogees",
+        "type": "RECEIVES",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "LSG Ventures",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "Elio Leoni Sceti",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "The Tussauds Group Ltd",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "Haim Perry",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      },
+      {
+        "head": "Eric Nicoli CBE",
+        "type": "INVESTS",
+        "tail": "\u00a3198,944"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Landbot",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Bankinter",
+        "type": "INVESTS",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Encomenda Smart",
+        "type": "INVESTS",
+        "tail": "\u20ac1.9 million"
+      }
+    ],
+    [
+      {
+        "head": "Landbot",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Landbot",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Bankinter",
+        "type": "INVESTS",
+        "tail": "\u20ac1.9 million"
+      },
+      {
+        "head": "Encomenda Smart",
+        "type": "INVESTS",
+        "tail": "\u20ac1.9 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Qonto",
+        "type": "RECEIVES",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Valar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      }
+    ],
+    [
+      {
+        "head": "Qonto",
+        "type": "RECEIVES",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Valar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Valar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      }
+    ],
+    [
+      {
+        "head": "Qonto",
+        "type": "RECEIVES",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Valar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "CurrencyFair",
+        "type": "RECEIVES",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Frontline Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      }
+    ],
+    [
+      {
+        "head": "CurrencyFair",
+        "type": "RECEIVES",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Frontline Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Ruth Fletcher",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Rush",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Eleven Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Launchub Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Yair Miron",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Adii Pienaar",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Casey Armstrong",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "founders of SMSBump and HeyCarson",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Rush",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Eleven Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Launchub Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Yair Miron",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Adii Pienaar",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Casey Armstrong",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Rush",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Eleven Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Launchub Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Yair Miron",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Adii Pienaar",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "Casey Armstrong",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      },
+      {
+        "head": "founders of SMSBump",
+        "type": "INVESTS",
+        "tail": "\u20ac2.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "RapidMiner",
+        "type": "RECEIVES",
+        "tail": "$5 million"
+      },
+      {
+        "head": "Earlybird Venture Capital",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      },
+      {
+        "head": "Open Ocean Capital",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      }
+    ],
+    [
+      {
+        "head": "RapidMiner",
+        "type": "RECEIVES",
+        "tail": "$5 million"
+      },
+      {
+        "head": "Earlybird Venture Capital",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      },
+      {
+        "head": "Open Ocean Capital",
+        "type": "INVESTS",
+        "tail": "$5 million"
+      },
+      {
+        "head": "RapidMiner",
+        "type": "RECEIVES",
+        "tail": "$5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Vinterior",
+        "type": "RECEIVES",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "Active Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "Venrex",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      }
+    ],
+    [
+      {
+        "head": "Vinterior",
+        "type": "RECEIVES",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "Active Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Medloop",
+        "type": "RECEIVES",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "Kamet Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "AXA",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Shipamax",
+        "type": "RECEIVES",
+        "tail": "$2.5 million"
+      },
+      {
+        "head": "Cherubic Ventures",
+        "type": "INVESTS",
+        "tail": "$2.5 million"
+      },
+      {
+        "head": "AME Cloud",
+        "type": "INVESTS",
+        "tail": "$2.5 million"
+      },
+      {
+        "head": "FF Angel",
+        "type": "INVESTS",
+        "tail": "$2.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Academy",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "LocalGlobe",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "Emerge Education",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Academy",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "LocalGlobe",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "Emerge Education",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "current and former leaders",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac3.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Teemyco",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "42CAP",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Antler",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Luminar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Mehdi Ghissassi",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Sameer Singh",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Keith Richman",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      }
+    ],
+    [
+      {
+        "head": "Teemyco",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "42CAP",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Antler",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Luminar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Mehdi Ghissassi",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Sameer Singh",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Heja",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Luminar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Bonnier Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Inbox Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Max Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Ted Nelson",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      }
+    ],
+    [
+      {
+        "head": "Heja",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Luminar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Bonnier Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Inbox Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Max Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Ted Nelson",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Mattias Weinhandl",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Adthena",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Updata Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Dispelix",
+        "type": "RECEIVES",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Atlantic Bridge",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "CCB Trust",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Flashpoint",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Lifeline Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "VTT Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Finnish Industry Investment",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "3M Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      }
+    ],
+    [
+      {
+        "head": "Dispelix",
+        "type": "RECEIVES",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Atlantic Bridge",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "CCB Trust",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Flashpoint",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "Lifeline Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      },
+      {
+        "head": "VTT Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac28.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "VanMoof",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.5 million"
+      },
+      {
+        "head": "Balderton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac12.5 million"
+      },
+      {
+        "head": "SINBON Electronics",
+        "type": "INVESTS",
+        "tail": "\u20ac12.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Wolt",
+        "type": "RECEIVES",
+        "tail": "$130 million"
+      },
+      {
+        "head": "ICONIQ Capital",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "83North",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "Highland Europe",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "EQT Ventures",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "Lifeline Ventures",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      }
+    ],
+    [
+      {
+        "head": "Wolt",
+        "type": "RECEIVES",
+        "tail": "$130 million"
+      },
+      {
+        "head": "ICONIQ Capital",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "Highland Europe",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "EQT Ventures",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      },
+      {
+        "head": "Lifeline Ventures",
+        "type": "INVESTS",
+        "tail": "$130 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Oppex",
+        "type": "RECEIVES",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "Alma Media",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "Veturi",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "Tekes",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "seven angel investors",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      }
+    ],
+    [
+      {
+        "head": "Oppex",
+        "type": "RECEIVES",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "Alma Media",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "Veturi",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "Tekes",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "$1.5M"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Your Juno",
+        "type": "RECEIVES",
+        "tail": "\u20ac295K"
+      },
+      {
+        "head": "Kurt Lambert",
+        "type": "INVESTS",
+        "tail": "\u20ac295K"
+      },
+      {
+        "head": "Peter Fanconi",
+        "type": "INVESTS",
+        "tail": "\u20ac295K"
+      }
+    ],
+    [
+      {
+        "head": "Your Juno",
+        "type": "RECEIVES",
+        "tail": "\u20ac295K"
+      },
+      {
+        "head": "Kurt Lambert",
+        "type": "INVESTS",
+        "tail": "\u20ac295K"
+      },
+      {
+        "head": "Founder and Chairman of Harcourt Investment Consulting",
+        "type": "INVESTS",
+        "tail": "\u20ac295K"
+      },
+      {
+        "head": "Peter Fanconi",
+        "type": "INVESTS",
+        "tail": "\u20ac295K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Solivus",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Founders Factory",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "G-force",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Crowdcube investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Founders Factory",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "G-force",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Crowdcube investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Solivus",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Port 6",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Superhero Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Charlotta Bj\u00f6rnberg-Paul",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Urmas Purde",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Timo Rein",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Peep Vain",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ],
+    [
+      {
+        "head": "Port 6",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Superangel",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Superhero Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Charlotta Bj\u00f6rnberg-Paul",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Urmas Purde",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Timo Rein",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Peep Vain",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Civey",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.2 million"
+      },
+      {
+        "head": "IBB Bet",
+        "type": "INVESTS",
+        "tail": "\u20ac1.2 million"
+      }
+    ],
+    [
+      {
+        "head": "Civey",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.2 million"
+      },
+      {
+        "head": "IBB Bet",
+        "type": "INVESTS",
+        "tail": "Civey"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "MedKitDoc",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Vorwerk Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Acton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Picus Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "FlixBus founders Daniel Krauss",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Jochen Engert",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ],
+    [
+      {
+        "head": "MedKitDoc",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Vorwerk Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Acton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Picus Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Daniel Krauss",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Jochen Engert",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ],
+    [
+      {
+        "head": "MedKitDoc",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Vorwerk Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Acton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Picus Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "FlixBus",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Daniel Krauss",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Jochen Engert",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Energic",
+        "type": "RECEIVES",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Innovation by CA Nord de France fund",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Cr\u00e9dit Agricole Nord de France",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Damien Deleplanque",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Marc Reneaume",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      }
+    ],
+    [
+      {
+        "head": "Energic",
+        "type": "RECEIVES",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Innovation by CA Nord de France fund",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Damien Deleplanque",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "Marc Reneaume",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Payrails",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Andreessen Horowitz",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "HV Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Emmanuel Thomassin",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Jochen Engert",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Andr\u00e9 Schw\u00e4mmlein",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Daniel Krauss",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Dominik Richter",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      }
+    ],
+    [
+      {
+        "head": "Payrails",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Andreessen Horowitz",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "HV Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Emmanuel Thomassin",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Jochen Engert",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Andr\u00e9 Schw\u00e4mmlein",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Daniel Krauss",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "LaCollection",
+        "type": "RECEIVES",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Alven",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Agla\u00e9 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Fr\u00e9d\u00e9ric Jousset",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Guillaume Houz\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Cygni Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Premier Janvier Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Nicolas Julia",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Thomas France",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      }
+    ],
+    [
+      {
+        "head": "LaCollection",
+        "type": "RECEIVES",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Alven",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Agla\u00e9 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Guillaume Houz\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Cygni Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      },
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac8.78 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "ReceiptHero",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Lifeline Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Superhero Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Vidici Venture",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Metavallon VC",
+        "type": "INVESTS",
+        "tail": "\u20ac534K"
+      },
+      {
+        "head": "Intelistyle \u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac534K"
+      }
+    ],
+    [
+      {
+        "head": "Metavallon VC",
+        "type": "INVESTS",
+        "tail": "\u20ac534K"
+      },
+      {
+        "head": "Intelistyle\u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac534K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Event Inc",
+        "type": "RECEIVES",
+        "tail": "7-sigit"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "7-sigit"
+      }
+    ],
+    [
+      {
+        "head": "Event Inc",
+        "type": "RECEIVES",
+        "tail": "7-sigitseedfunding roung"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "7-sigitseedfunding roung"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Elasmogen",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "Deepbridge Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      }
+    ],
+    [
+      {
+        "head": "Elasmogen",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "Deepbridge Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "Elasmogen",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "XYZ Reality",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Amadeus Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Adara Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "J Coffey Construction",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      }
+    ],
+    [
+      {
+        "head": "XYZ Reality",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Adara Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Freespee",
+        "type": "RECEIVES",
+        "tail": "1.1 millionEuro"
+      },
+      {
+        "head": "TechCrunch Europe",
+        "type": "INVESTS",
+        "tail": "1.1 millionEuro"
+      },
+      {
+        "head": "Finland \u2019s Inventure",
+        "type": "INVESTS",
+        "tail": "1.1 millionEuro"
+      }
+    ],
+    [
+      {
+        "head": "Freespee",
+        "type": "RECEIVES",
+        "tail": "1.1 millionEuro"
+      },
+      {
+        "head": "TechCrunch Europe",
+        "type": "INVESTS",
+        "tail": "1.1 millionEuro"
+      },
+      {
+        "head": "Inventure",
+        "type": "INVESTS",
+        "tail": "1.1 millionEuro"
+      }
+    ],
+    [
+      {
+        "head": "Freespee",
+        "type": "RECEIVES",
+        "tail": "1.1 millionEuro"
+      },
+      {
+        "head": "TechCrunch Europe",
+        "type": "INVESTS",
+        "tail": "1.1 millionEuro"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Playtomic",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "GP Bullhound",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Optimizer Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      }
+    ],
+    [
+      {
+        "head": "Playtomic",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "GP Bullhound",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Optimizer Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Playtomic",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Ledger",
+        "type": "RECEIVES",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Esprit",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Venture Network funds",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Associates",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Dragon",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Boost VC",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "FirstMark Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Cathay Innovation",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Korelya Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "CapHorn Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "GDTRE",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      }
+    ],
+    [
+      {
+        "head": "Ledger",
+        "type": "RECEIVES",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Esprit",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Venture Network funds",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Associates",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Dragon",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Boost VC",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "FirstMark Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Cathay Innovation",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Korelya Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      }
+    ],
+    [
+      {
+        "head": "Ledger",
+        "type": "RECEIVES",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Esprit",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Venture Network funds",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Associates",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Draper Dragon",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Boost VC",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "FirstMark Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Cathay Innovation",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Korelya Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "CapHorn Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "GDTRE",
+        "type": "INVESTS",
+        "tail": "\u20ac61 million"
+      },
+      {
+        "head": "Ledger",
+        "type": "RECEIVES",
+        "tail": "\u20ac61 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Veremark",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "ACF Investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "Triple Point Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "SOV Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Mustard Seed",
+        "type": "INVESTS",
+        "tail": "\u00a3300k"
+      }
+    ],
+    [
+      {
+        "head": "Knok healthcare",
+        "type": "RECEIVES",
+        "tail": "\u00a3300k"
+      },
+      {
+        "head": "Mustard Seed",
+        "type": "INVESTS",
+        "tail": "\u00a3300k"
+      }
+    ],
+    [
+      {
+        "head": "Mustard Seed",
+        "type": "INVESTS",
+        "tail": "\u00a3300k"
+      },
+      {
+        "head": "Knok\u2019s",
+        "type": "RECEIVES",
+        "tail": "\u00a3300k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "KiWi",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Investiere",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Polytech Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Symbiotics",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "1to4 Foundation",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      }
+    ],
+    [
+      {
+        "head": "KiWi",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Investiere",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Polytech Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      },
+      {
+        "head": "Symbiotics",
+        "type": "INVESTS",
+        "tail": "\u20ac2.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Samaipata",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "illiCopro\u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Samaipata",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "illiCopro \u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Samaipata",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Kima Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "illiCopro\u2018s",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Techspace",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "No\u00e9 Group",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Techspace",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "No\u00e9 Group",
+        "type": "INVESTS",
+        "tail": "\u20ac5.8 million"
+      },
+      {
+        "head": "Techspace",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Next Performance",
+        "type": "RECEIVES",
+        "tail": "\u20ac16 million"
+      },
+      {
+        "head": "Kennet Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac16 million"
+      }
+    ],
+    [
+      {
+        "head": "Next Performance",
+        "type": "RECEIVES",
+        "tail": "\u20ac16 million"
+      }
+    ],
+    [
+      {
+        "head": "Kennet Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac16 million"
+      },
+      {
+        "head": "Next Performance",
+        "type": "RECEIVES",
+        "tail": "\u20ac16 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Hirio",
+        "type": "RECEIVES",
+        "tail": "\u20ac330K"
+      },
+      {
+        "head": "Pipedrive",
+        "type": "INVESTS",
+        "tail": "\u20ac330K"
+      }
+    ],
+    [
+      {
+        "head": "Hirio",
+        "type": "RECEIVES",
+        "tail": "\u20ac330K"
+      },
+      {
+        "head": "Pipedrive founders",
+        "type": "INVESTS",
+        "tail": "\u20ac330K"
+      }
+    ],
+    [
+      {
+        "head": "Hirio",
+        "type": "RECEIVES",
+        "tail": "\u20ac330K"
+      },
+      {
+        "head": "Pipedrive unicorn founders",
+        "type": "INVESTS",
+        "tail": "\u20ac330K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Swanest",
+        "type": "RECEIVES",
+        "tail": "\u20ac750,000"
+      },
+      {
+        "head": "Philippe Gillion",
+        "type": "INVESTS",
+        "tail": "\u20ac750,000"
+      }
+    ],
+    [
+      {
+        "head": "Philippe Gillion",
+        "type": "INVESTS",
+        "tail": "\u20ac750,000"
+      },
+      {
+        "head": "Swanest",
+        "type": "RECEIVES",
+        "tail": "\u20ac750,000"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Amberscript",
+        "type": "RECEIVES",
+        "tail": "\u20ac8.65 million"
+      },
+      {
+        "head": "Endeit Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac8.65 million"
+      }
+    ],
+    [
+      {
+        "head": "Endeit Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac8.65 million"
+      },
+      {
+        "head": "Amberscript",
+        "type": "RECEIVES",
+        "tail": "\u20ac8.65 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Comtravo",
+        "type": "RECEIVES",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Endeit Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Deutsche Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "AER Ticket",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Jan Valentin",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Creandum",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "btov",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      }
+    ],
+    [
+      {
+        "head": "Comtravo",
+        "type": "RECEIVES",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Endeit Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Deutsche Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "AER Ticket",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Jan Valentin",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "\u0178nsect",
+        "type": "RECEIVES",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Astanor Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Bpifrance",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Talis Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Idinvest Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Finasucre",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Compagnie du Bois Sauvage",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      }
+    ],
+    [
+      {
+        "head": "\u0178nsect",
+        "type": "RECEIVES",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Astanor Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Bpifrance",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Talis Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Idinvest Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Finasucre",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Compagnie du Bois Sauvage",
+        "type": "INVES",
+        "tail": "\u20ac110 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Pitch",
+        "type": "RECEIVES",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Index Ventures",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Eric Yuan",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Koen Bok",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Olivier Pomel",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Frank Thelen",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Andrew Wilkinson",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      }
+    ],
+    [
+      {
+        "head": "Pitch",
+        "type": "RECEIVES",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Index Ventures",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Eric Yuan",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Koen Bok",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Olivier Pomel",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      },
+      {
+        "head": "Frank Thelen",
+        "type": "INVESTS",
+        "tail": "$19 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Gravitee.io",
+        "type": "RECEIVES",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "AlbionVC",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "Oxx.",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      }
+    ],
+    [
+      {
+        "head": "Gravitee.io",
+        "type": "RECEIVES",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "AlbionVC",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      },
+      {
+        "head": "Oxx.io",
+        "type": "INVESTS",
+        "tail": "\u20ac9.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Holidu",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "EQT ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Kees Koolen",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lars J\u00f6rnow",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Venture Stars",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Senovo",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Chris Hitchen",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "Holidu",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "EQT ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Kees Koolen",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lars J\u00f6rnow",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Senovo",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Chris Hitchen",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Log my Care",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.1 million"
+      },
+      {
+        "head": "RYSE Asset Management",
+        "type": "INVESTS",
+        "tail": "\u20ac1.1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "knokcare",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Mustard Seed MAZE",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Fascinating Folio of Porto",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Ryse Asset Management",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      }
+    ],
+    [
+      {
+        "head": "knokcare",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Social Innovation Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Fascinating Folio of Porto",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      },
+      {
+        "head": "Ryse Asset Management",
+        "type": "INVESTS",
+        "tail": "\u20ac1.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "startupNeuro Event Labshas",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "Hadean Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "SHS Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "Maki.vc.",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      }
+    ],
+    [
+      {
+        "head": "Hadean Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "SHS Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "Maki.vc.",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      }
+    ],
+    [
+      {
+        "head": "startupNeuro Event Labshas",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "Hadean Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "SHS Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      },
+      {
+        "head": "Maki.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac3.9 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Viveo Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Tallink",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Ain Hanschmidt",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Graanul Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Anders Anderson",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ],
+    [
+      {
+        "head": "Viveo Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Tallink",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Ain Hanschmidt",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Anders Anderson",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "UnderCovers",
+        "type": "RECEIVES",
+        "tail": "six-digit"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "six-digit"
+      }
+    ],
+    [
+      {
+        "head": "UnderCovers",
+        "type": "RECEIVES",
+        "tail": "six-digitinvestment"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "six-digitinvestment"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Opbeat",
+        "type": "RECEIVES",
+        "tail": "$2.7 million"
+      },
+      {
+        "head": "Balderton Capital",
+        "type": "INVESTS",
+        "tail": "$2.7 million"
+      }
+    ],
+    [
+      {
+        "head": "Balderton Capital",
+        "type": "INVESTS",
+        "tail": "$2.7 million"
+      },
+      {
+        "head": "Opbeat",
+        "type": "RECEIVES",
+        "tail": "$2.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "HouseTrip",
+        "type": "RECEIVES",
+        "tail": "$2.7 million"
+      },
+      {
+        "head": "Index Ventures",
+        "type": "INVESTS",
+        "tail": "$2.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Wingtra",
+        "type": "RECEIVES",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "Credit Suisse Entrepreneur Capital Ltd.",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "Investiere",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "private investors",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "Zurcher Kantonalbank",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      }
+    ],
+    [
+      {
+        "head": "WingtraOne",
+        "type": "RECEIVES",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "Credit Suisse Entrepreneur Capital Ltd.",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "Investiere",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "private investors",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      },
+      {
+        "head": "Zurcher Kantonalbank",
+        "type": "INVESTS",
+        "tail": "\u20ac9 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "initiafy",
+        "type": "RECEIVES",
+        "tail": "$1.5 million"
+      },
+      {
+        "head": "Delta Partners Group",
+        "type": "INVESTS",
+        "tail": "$1.5 million"
+      },
+      {
+        "head": "ACT Venture Capital",
+        "type": "INVESTS",
+        "tail": "$1.5 million"
+      },
+      {
+        "head": "Leslie Buckley",
+        "type": "INVESTS",
+        "tail": "$1.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Chip",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      }
+    ],
+    [
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Chip",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.9 million"
+      }
+    ],
+    [
+      {
+        "head": "Chip",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.1 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac1.1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "MeetFrank",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Karma.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Enern VC",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Change Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "andHummingbird",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "MeetFrank",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "investorsKarma.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Enern VC",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "Change Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "andHummingbird",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "by\u200bInnovacom Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Wingly",
+        "type": "RECEIVES",
+        "tail": "\u20ac3 million"
+      }
+    ],
+    [
+      {
+        "head": "by\u200bInnovacom Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "LipoCoat",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "several investors",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "LipoCoat",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "MESA+",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "several investors",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ],
+    [
+      {
+        "head": "LipoCoat",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "several investors",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      },
+      {
+        "head": "MESA+",
+        "type": "INVESTS",
+        "tail": "\u20ac1.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "RealFevr",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Shilling",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "SportMultim\u00e9dia",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Moonrock Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Morningstar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      }
+    ],
+    [
+      {
+        "head": "RealFevr",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "SportMultim\u00e9dia",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Moonrock Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      },
+      {
+        "head": "Morningstar Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Cazana",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Passion Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "David Hammond",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Robert Diamond",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      }
+    ],
+    [
+      {
+        "head": "Cazana",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Passion Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "David Hammond",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Robert Diamond",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      }
+    ],
+    [
+      {
+        "head": "Cazana",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Passion Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "David Hammond",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      },
+      {
+        "head": "Robert Diamond",
+        "type": "INVESTS",
+        "tail": "\u20ac1.15 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Vector.ai",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Luxodo",
+        "type": "RECEIVES",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "b-to-v",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "RI Digital Ventures",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "Holger Hengstler",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "Heiko Hubertz",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      }
+    ],
+    [
+      {
+        "head": "Luxodo",
+        "type": "RECEIVES",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "DN Capital",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "RI Digital Ventures",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "Holger Hengstler",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      },
+      {
+        "head": "Heiko Hubertz",
+        "type": "INVESTS",
+        "tail": "$2.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Geoblink",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.2 million"
+      },
+      {
+        "head": "Elaia Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac5.2 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "FieldSense",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Danish Agro",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Rockstart",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Pajbjergfonden",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      }
+    ],
+    [
+      {
+        "head": "FieldSense",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Danish Agro",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      },
+      {
+        "head": "Rockstart",
+        "type": "INVESTS",
+        "tail": "\u20ac2.9 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Videoplaza",
+        "type": "RECEIVES",
+        "tail": "$12million"
+      },
+      {
+        "head": "Innovacom",
+        "type": "INVESTS",
+        "tail": "$12million"
+      },
+      {
+        "head": "Qualcomm Ventures",
+        "type": "INVESTS",
+        "tail": "$12million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Y\u0308nsect",
+        "type": "RECEIVES",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "European Commission",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Bio-Based Industries Joint Undertaking",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      }
+    ],
+    [
+      {
+        "head": "Y\u0308nsect",
+        "type": "RECEIVES",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "European Commission",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Bio-Based Industries Joint Undertaking",
+        "type": "INVESTS",
+        "tail": "\u20ac110 million"
+      },
+      {
+        "head": "Y\u0308nsect",
+        "type": "RECEIVES",
+        "tail": "\u20ac110 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Tiqets",
+        "type": "RECEIVES",
+        "tail": "$4 million"
+      },
+      {
+        "head": "Capital Mills",
+        "type": "INVESTS",
+        "tail": "$4 million"
+      }
+    ],
+    [
+      {
+        "head": "Tiqets",
+        "type": "RECEIVES",
+        "tail": "$4 million"
+      },
+      {
+        "head": "Capital Mills",
+        "type": "INVESTS",
+        "tail": "$4 million"
+      },
+      {
+        "head": "Tiqets",
+        "type": "RECEIVES",
+        "tail": "$450K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "LatticeFlow",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "btov",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      }
+    ],
+    [
+      {
+        "head": "btov",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.3 million"
+      },
+      {
+        "head": "LatticeFlow",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Ripjar",
+        "type": "RECEIVES",
+        "tail": "\u20ac31 million"
+      },
+      {
+        "head": "Long Ridge Equity Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac31 million"
+      },
+      {
+        "head": "Winton Capital Ltd",
+        "type": "INVESTS",
+        "tail": "\u20ac31 million"
+      },
+      {
+        "head": "Accenture plc",
+        "type": "INVESTS",
+        "tail": "\u20ac31 million"
+      }
+    ],
+    [
+      {
+        "head": "Ripjar",
+        "type": "RECEIVES",
+        "tail": "\u20ac51 million"
+      },
+      {
+        "head": "Long Ridge Equity Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac51 million"
+      },
+      {
+        "head": "Winton Capital Ltd",
+        "type": "INVESTS",
+        "tail": "\u20ac51 million"
+      },
+      {
+        "head": "Accenture plc",
+        "type": "INVESTS",
+        "tail": "\u20ac51 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "PLAN3T",
+        "type": "RECEIVES",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "APX",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Hamburgische Investitions- und F\u00f6rderbank",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Marc Sasserath",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Guido Syr\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Heinrich Paravicini",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Johannes Plass",
+        "type": "INV",
+        "tail": "\u20ac750k"
+      }
+    ],
+    [
+      {
+        "head": "PLAN3T",
+        "type": "RECEIVES",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "APX",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Hamburgische Investitions- und F\u00f6rderbank",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Marc Sasserath",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Guido Syr\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Heinrich Paravicini",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Johannes Plass",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      }
+    ],
+    [
+      {
+        "head": "PLAN3T",
+        "type": "RECEIVES",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "APX",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Hamburgische Investitions- und F\u00f6rderbank",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Marc Sasserath",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Guido Syr\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      },
+      {
+        "head": "Heinrich Paravicini",
+        "type": "INVESTS",
+        "tail": "\u20ac750k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Solease",
+        "type": "RECEIVES",
+        "tail": "\u20ac3 million"
+      },
+      {
+        "head": "Arosa Capital Management",
+        "type": "INVESTS",
+        "tail": "\u20ac3 million"
+      }
+    ],
+    [
+      {
+        "head": "Solease",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Arosa Capital Management",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "regional energy funds",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "crowdfunders",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ],
+    [
+      {
+        "head": "Solease",
+        "type": "RECEIVES",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "Arosa Capital Management",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      },
+      {
+        "head": "crowdfunding",
+        "type": "INVESTS",
+        "tail": "\u20ac17 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "startupQatalog",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Atomico",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Salesforce Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Jacob de Geer",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Chris Hitchen",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Renaud Visage",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Andy Chung",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Andreas Klinger",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Deepmind",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Monzo",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      }
+    ],
+    [
+      {
+        "head": "startupQatalog",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Atomico",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Salesforce Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Jacob de Geer",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Chris Hitchen",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Renaud Visage",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      }
+    ],
+    [
+      {
+        "head": "startupQatalog",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Atomico",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Salesforce Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Jacob de Geer",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Chris Hitchen",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Renaud Visage",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Philipp Moehring",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Andy Chung",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Andreas Klinger",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Transferwise",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Deepmind",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      },
+      {
+        "head": "Monzo",
+        "type": "INVESTS",
+        "tail": "\u20ac12.7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "The Insights People",
+        "type": "RECEIVES",
+        "tail": "\u20ac550K"
+      },
+      {
+        "head": "DSW Angels",
+        "type": "INVESTS",
+        "tail": "\u20ac550K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Draper Esprit",
+        "type": "INVESTS",
+        "tail": "\u20ac6.87 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.87 million"
+      },
+      {
+        "head": "Channel 4",
+        "type": "INVESTS",
+        "tail": "\u20ac6.87 million"
+      },
+      {
+        "head": "Balderton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac6.87 million"
+      }
+    ],
+    [
+      {
+        "head": "Crowdcube",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.87 million"
+      },
+      {
+        "head": "Channel 4",
+        "type": "INVESTS",
+        "tail": "\u20ac6.87 million"
+      },
+      {
+        "head": "Balderton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac6.87 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Genomtec",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Fast Path program",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Ryte",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.5 million"
+      },
+      {
+        "head": "Octopus Investments",
+        "type": "INVESTS",
+        "tail": "\u20ac6.5 million"
+      }
+    ],
+    [
+      {
+        "head": "Ryte",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.5 million"
+      },
+      {
+        "head": "Octopus Investments",
+        "type": "INVESTS",
+        "tail": "\u20ac6.5 million"
+      },
+      {
+        "head": "Octopus Group",
+        "type": "INVESTS",
+        "tail": "\u20ac6.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Red Sift",
+        "type": "RECEIVES",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Chuck Swenberg",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "In-Q-Tel, Inc.",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      }
+    ],
+    [
+      {
+        "head": "Red Sift",
+        "type": "RECEIVES",
+        "tail": "\u20ac8 million"
+      },
+      {
+        "head": "Chuck Swenberg",
+        "type": "INVESTS",
+        "tail": "\u20ac8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "insureQ",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Flash Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "GFC",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "insureQ",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Nauta Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Flash Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "GFC",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "insureQ",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "DeadHappy",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.5 million"
+      },
+      {
+        "head": "e.ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.5 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "HV Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Hans Georg N\u00e4der",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      }
+    ],
+    [
+      {
+        "head": "HV Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "Hans Georg N\u00e4der",
+        "type": "INVESTS",
+        "tail": "\u20ac3.4 million"
+      },
+      {
+        "head": "the company",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Mentessa",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Eleven Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ],
+    [
+      {
+        "head": "Eleven Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "business angels",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Mentessa",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "IQM Quantum Computers",
+        "type": "RECEIVES",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Tesi",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "OpenOcean",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Maki.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Salvia GmbH",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Santo Venture Capital GmbH",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Tencent",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      }
+    ],
+    [
+      {
+        "head": "IQM Quantum Computers",
+        "type": "RECEIVES",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Tesi",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "OpenOcean",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Matadero QED",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Salvia GmbH",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Santo Venture Capital GmbH",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Tencent",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      }
+    ],
+    [
+      {
+        "head": "IQM Quantum Computers",
+        "type": "RECEIVES",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Tesi",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "OpenOcean",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Maki.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Vito Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Matadero QED",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      },
+      {
+        "head": "Salvia GmbH",
+        "type": "INVESTS",
+        "tail": "\u20ac39 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "TISSIUM",
+        "type": "RECEIVES",
+        "tail": "\u20ac50 million"
+      },
+      {
+        "head": "Cathay Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac50 million"
+      },
+      {
+        "head": "Sofinnova Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac50 million"
+      }
+    ],
+    [
+      {
+        "head": "TISSIUM",
+        "type": "RECEIVES",
+        "tail": "\u20ac50 million"
+      },
+      {
+        "head": "Cathay Health",
+        "type": "RECEIVES",
+        "tail": "\u20ac50 million"
+      },
+      {
+        "head": "Sofinnova Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac50 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Uniplaces",
+        "type": "RECEIVES",
+        "tail": "\u00a3700,000"
+      },
+      {
+        "head": "Octopus Investments",
+        "type": "INVESTS",
+        "tail": "\u00a3700,000"
+      },
+      {
+        "head": "Alex Chesterman",
+        "type": "INVESTS",
+        "tail": "\u00a3700,000"
+      },
+      {
+        "head": "William Reeve",
+        "type": "INVESTS",
+        "tail": "\u00a3700,000"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "startupXamplahas",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.8 million"
+      },
+      {
+        "head": "Zoom",
+        "type": "INVESTS",
+        "tail": "\u20ac6.8 million"
+      },
+      {
+        "head": "Horizons Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac6.8 million"
+      }
+    ],
+    [
+      {
+        "head": "Xamplahas",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.8 million"
+      },
+      {
+        "head": "Zoom",
+        "type": "INVESTS",
+        "tail": "\u20ac6.8 million"
+      },
+      {
+        "head": "Horizons Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac6.8 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Algolia",
+        "type": "RECEIVES",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Jason Lemkin \u2019s SaaStr fund",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Jyoti Bansal",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Clark Valberg",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Des Traynor",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Point Nine Capital",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Storm Ventures",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      }
+    ],
+    [
+      {
+        "head": "Algolia",
+        "type": "RECEIVES",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Jason Lemkin \u2019s SaaStr fund",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Jyoti Bansal",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Clark Valberg",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Des Traynor",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      }
+    ],
+    [
+      {
+        "head": "Algolia",
+        "type": "RECEIVES",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Accel",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Jason Lemkin \u2019s",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Jyoti Bansal",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Clark Valberg",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Des Traynor",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Alven Capital",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Point Nine Capital",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      },
+      {
+        "head": "Storm Ventures",
+        "type": "INVESTS",
+        "tail": "$53 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Rest Less",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "QED Investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "1818 Venture Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      }
+    ],
+    [
+      {
+        "head": "Rest Less",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "QED Investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "1818 Venture Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "angel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Clearscore",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Wagestream",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Fidel",
+        "type": "INV",
+        "tail": "\u20ac2.6 million"
+      }
+    ],
+    [
+      {
+        "head": "Rest Less",
+        "type": "RECEIVES",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "QED Investors",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "1818 Venture Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      },
+      {
+        "head": "Octopus Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac2.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Quipu",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      },
+      {
+        "head": "Dan Kragt",
+        "type": "INVESTS",
+        "tail": "\u20ac2 million"
+      }
+    ],
+    [
+      {
+        "head": "Quipu",
+        "type": "RECEIVES",
+        "tail": "\u20ac2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "ProGlove",
+        "type": "RECEIVES",
+        "tail": "\u20ac36 million"
+      },
+      {
+        "head": "Summit Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac36 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Blueheart",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "PROfounders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Calm/Storm",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ],
+    [
+      {
+        "head": "Blueheart",
+        "type": "RECEIVES",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "PROfounders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      },
+      {
+        "head": "Calm/ Storm",
+        "type": "INVESTS",
+        "tail": "\u20ac1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Starling",
+        "type": "RECEIVES",
+        "tail": "\u20ac115 million"
+      },
+      {
+        "head": "Capability and Innovation Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac115 million"
+      }
+    ],
+    [
+      {
+        "head": "Starling",
+        "type": "RECEIVES",
+        "tail": "\u20ac115 million"
+      },
+      {
+        "head": "Capability and Innovation Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac115 million"
+      },
+      {
+        "head": "Starling Bank",
+        "type": "RECEIVES",
+        "tail": "\u20ac85.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "TourRadar",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Cherry Ventures",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "aws Founders Fund",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Speedinvest",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      }
+    ],
+    [
+      {
+        "head": "TourRadar",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Cherry Ventures",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "aws Founders Fund",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Speedinvest",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "TourRadar",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Home24",
+        "type": "RECEIVES",
+        "tail": "\u20ac120 million"
+      },
+      {
+        "head": "Baillie Gifford",
+        "type": "INVESTS",
+        "tail": "\u20ac120 million"
+      },
+      {
+        "head": "Rocket Internet SE",
+        "type": "INVESTS",
+        "tail": "\u20ac120 million"
+      }
+    ],
+    [
+      {
+        "head": "Home24",
+        "type": "RECEIVES",
+        "tail": "\u20ac120 million"
+      },
+      {
+        "head": "Baillie Gifford",
+        "type": "INVESTS",
+        "tail": "\u20ac120 million"
+      },
+      {
+        "head": "existing as well as new investors",
+        "type": "INVESTS",
+        "tail": "\u20ac120 million"
+      },
+      {
+        "head": "Rocket Internet SE",
+        "type": "INVESTS",
+        "tail": "\u20ac120 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Consorto",
+        "type": "RECEIVES",
+        "tail": "\u20ac500k"
+      }
+    ],
+    [
+      {
+        "head": "Consorto",
+        "type": "RECEIVES",
+        "tail": "\u20ac500k"
+      },
+      {
+        "head": "professional investors",
+        "type": "INVESTS",
+        "tail": "\u20ac500k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "MunchFit",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      }
+    ],
+    [
+      {
+        "head": "MunchFit",
+        "type": "RECEIVES",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      },
+      {
+        "head": "Fitvestors",
+        "type": "INVESTS",
+        "tail": "\u20ac1.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Bintel",
+        "type": "RECEIVES",
+        "tail": "\u20ac760k"
+      },
+      {
+        "head": "Almi Invest",
+        "type": "INVESTS",
+        "tail": "\u20ac760k"
+      },
+      {
+        "head": "Erik Urnes",
+        "type": "INVESTS",
+        "tail": "\u20ac760k"
+      },
+      {
+        "head": "Philip Abdon",
+        "type": "INVESTS",
+        "tail": "\u20ac760k"
+      }
+    ],
+    [
+      {
+        "head": "Bintel",
+        "type": "RECEIVES",
+        "tail": "\u20ac760k"
+      },
+      {
+        "head": "Erik Urnes",
+        "type": "INVESTS",
+        "tail": "\u20ac760k"
+      },
+      {
+        "head": "Philip Abdon",
+        "type": "INVESTS",
+        "tail": "\u20ac760k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Universal Avenue",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.3 million"
+      },
+      {
+        "head": "Varvet",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.3 million"
+      },
+      {
+        "head": "MOOR Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.3 million"
+      }
+    ],
+    [
+      {
+        "head": "Universal Avenue",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.3 million"
+      },
+      {
+        "head": "MOOR Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.3 million"
+      }
+    ],
+    [
+      {
+        "head": "Varvet",
+        "type": "RECEIVES",
+        "tail": "\u20ac5.3 million"
+      },
+      {
+        "head": "MOOR Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac5.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "StudySmarter",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Lars Fjelsoe-Nielsen",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Dieter von Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      }
+    ],
+    [
+      {
+        "head": "StudySmarter",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Left Lane Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Lars Fjelsoe-Nielsen",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Dieter von Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      }
+    ],
+    [
+      {
+        "head": "StudySmarter",
+        "type": "RECEIVES",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Owl Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Lars Fjelsoe-Nielsen",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Dieter von Holtzbrinck Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      },
+      {
+        "head": "Left Lane Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac12.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Convelio",
+        "type": "RECEIVES",
+        "tail": "\u20ac30 million"
+      },
+      {
+        "head": "Forestay",
+        "type": "INVESTS",
+        "tail": "\u20ac30 million"
+      },
+      {
+        "head": "Mundi Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac30 million"
+      },
+      {
+        "head": "European Investment Fund",
+        "type": "INVESTS",
+        "tail": "\u20ac30 million"
+      },
+      {
+        "head": "Acton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac30 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac30 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Kipwise",
+        "type": "RECEIVES",
+        "tail": "\u20ac400K"
+      },
+      {
+        "head": "Icebreaker.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac400K"
+      },
+      {
+        "head": "Techstars London andangel investors",
+        "type": "INVESTS",
+        "tail": "\u20ac400K"
+      }
+    ],
+    [
+      {
+        "head": "Kipwise",
+        "type": "RECEIVES",
+        "tail": "\u20ac400K"
+      },
+      {
+        "head": "Icebreaker.vc",
+        "type": "INVESTS",
+        "tail": "\u20ac400K"
+      },
+      {
+        "head": "Techstars London",
+        "type": "INVESTS <triplet>angel investors",
+        "tail": "\u20ac400K"
+      },
+      {
+        "head": "Techstars London",
+        "type": "INVESTS",
+        "tail": "\u20ac400K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Ostrom",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "468 Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "J12 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "\u00dcbermorgen Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "J\u00f6rg Kattner",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      }
+    ],
+    [
+      {
+        "head": "Ostrom",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "468 Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "J12 Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      },
+      {
+        "head": "\u00dcbermorgen Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.4 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Statkraft Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.52 million"
+      },
+      {
+        "head": "ETF Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac4.52 million"
+      },
+      {
+        "head": "Greenbird",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.52 million"
+      }
+    ],
+    [
+      {
+        "head": "Statkraft Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac4.52 million"
+      },
+      {
+        "head": "ETF Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac4.52 million"
+      },
+      {
+        "head": "Greenbird Integration Technology AS",
+        "type": "RECEIVES",
+        "tail": "\u20ac4.52 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Casavo",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Project A Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Picus Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "360 Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Kervis Asset Management",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Boost Heroes",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Marco Pescarmona",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ],
+    [
+      {
+        "head": "Casavo",
+        "type": "RECEIVES",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Project A Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Picus Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "360 Capital Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Kervis Asset Management",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Boost Heroes",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Marco Pescarmona",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      },
+      {
+        "head": "Rancio Cube",
+        "type": "INVESTS",
+        "tail": "\u20ac7 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Edurino",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Emerge Education",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Fabian and Ferry Heilemann",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Jens Begemann",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Verena Pausder",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Ben Drury",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      }
+    ],
+    [
+      {
+        "head": "Edurino",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "btov Partners",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Emerge Education",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Fabian",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Ferry Heilemann",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Jens Begemann",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Verena Pausder",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Ben Drury",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Christian Felgenhauer",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Maurice Khudhir",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      }
+    ],
+    [
+      {
+        "head": "Edurino",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Emerge Education",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Fabian",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Ferry Heilemann",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Jens Begemann",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Verena Pausder",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Ben Drury",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Christian Felgenhauer",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      },
+      {
+        "head": "Maurice Khudhir",
+        "type": "INVESTS",
+        "tail": "\u20ac3.35 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Meditopia",
+        "type": "RECEIVES",
+        "tail": "\u20ac13.1 million"
+      },
+      {
+        "head": "Creandum",
+        "type": "INVESTS",
+        "tail": "\u20ac13.1 million"
+      },
+      {
+        "head": "Highland Europe",
+        "type": "INVESTS",
+        "tail": "\u20ac13.1 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Groover",
+        "type": "RECEIVES",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "Partech",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      },
+      {
+        "head": "Bpifrance",
+        "type": "INVESTS",
+        "tail": "\u20ac6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "GoCardless",
+        "type": "RECEIVES",
+        "tail": "$13 million"
+      },
+      {
+        "head": "Notion Capital",
+        "type": "INVESTS",
+        "tail": "$13 million"
+      },
+      {
+        "head": "Balderton Capital",
+        "type": "INVESTS",
+        "tail": "$13 million"
+      },
+      {
+        "head": "Accel Partners",
+        "type": "INVESTS",
+        "tail": "$13 million"
+      },
+      {
+        "head": "Passion Capital",
+        "type": "INVESTS",
+        "tail": "$13 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "PeopleDoc",
+        "type": "RECEIVES",
+        "tail": "$17.5 million"
+      },
+      {
+        "head": "Accel Partners",
+        "type": "INVESTS",
+        "tail": "$17.5 million"
+      },
+      {
+        "head": "previous investors",
+        "type": "INVESTS",
+        "tail": "$17.5 million"
+      }
+    ],
+    [
+      {
+        "head": "PeopleDoc",
+        "type": "RECEIVES",
+        "tail": "$17.5 million"
+      },
+      {
+        "head": "Accel Partners",
+        "type": "INVESTS",
+        "tail": "$17.5 million"
+      },
+      {
+        "head": "previous investors",
+        "type": "INVESTS",
+        "tail": "$17.5 million"
+      },
+      {
+        "head": "PeopleDoc",
+        "type": "RECEIVES",
+        "tail": "$17.5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Quiqup",
+        "type": "RECEIVES",
+        "tail": "\u00a3500 million"
+      },
+      {
+        "head": "Delivery Hero",
+        "type": "INVESTS",
+        "tail": "\u00a3500 million"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u00a3500 million"
+      }
+    ],
+    [
+      {
+        "head": "Quiqup",
+        "type": "RECEIVES",
+        "tail": "\u00a3500,000"
+      },
+      {
+        "head": "Delivery Hero",
+        "type": "INVESTS",
+        "tail": "\u00a3500,000"
+      },
+      {
+        "head": "Global Founders Capital",
+        "type": "INVESTS",
+        "tail": "\u00a3500,000"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "MPB",
+        "type": "RECEIVES",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Acton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Mobeus",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Beringea",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      }
+    ],
+    [
+      {
+        "head": "MPB",
+        "type": "RECEIVES",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Acton Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Beringea",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      },
+      {
+        "head": "Mobeus",
+        "type": "INVESTS",
+        "tail": "\u20ac10 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "MortgageGym",
+        "type": "RECEIVES",
+        "tail": "\u00a32 million"
+      },
+      {
+        "head": "Gaby Salem",
+        "type": "INVESTS",
+        "tail": "\u00a32 million"
+      },
+      {
+        "head": "China Pacific Capital",
+        "type": "INVESTS",
+        "tail": "\u00a32 million"
+      },
+      {
+        "head": "Trifecta Capital",
+        "type": "INVESTS",
+        "tail": "\u00a32 million"
+      }
+    ],
+    [
+      {
+        "head": "MortgageGym",
+        "type": "RECEIVES",
+        "tail": "\u00a31.3 million"
+      },
+      {
+        "head": "Gaby Salem",
+        "type": "INVESTS",
+        "tail": "\u00a31.3 million"
+      },
+      {
+        "head": "China Pacific Capital",
+        "type": "INVESTS",
+        "tail": "\u00a31.3 million"
+      },
+      {
+        "head": "Trifecta Capital",
+        "type": "INVESTS",
+        "tail": "\u00a31.3 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Ubimax",
+        "type": "RECEIVES",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Atlantic Bridge",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      },
+      {
+        "head": "Westcott LLC",
+        "type": "INVESTS",
+        "tail": "$6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Blickfeld",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "Fluxunit \u2013 OSRAM Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "High-TechGr\u00fcnderfonds",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "Tengelmann Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "Unternehmertum VC",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      }
+    ],
+    [
+      {
+        "head": "Blickfeld",
+        "type": "RECEIVES",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "Fluxunit",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "OSRAM Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "High-TechGr\u00fcnderfonds",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "Tengelmann Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      },
+      {
+        "head": "Unternehmertum VC",
+        "type": "INVESTS",
+        "tail": "\u20ac3.6 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Sorare",
+        "type": "RECEIVES",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Benchmark",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Alexis Ohanian",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Gary Vaynerchuk",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Antoine Griezmann",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Rio Ferdinand",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      }
+    ],
+    [
+      {
+        "head": "Sorare",
+        "type": "RECEIVES",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Alexis Ohanian",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Gary Vaynerchuk",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Antoine Griezmann",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Rio Ferdinand",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Bonnet",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lightspeed",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "GV",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "20VC",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "APX",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Will Shu",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Jon McNeill",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lawrence Leuschner",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "founders of Zapp Joe Falter",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Navid Hadzaad",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "Bonnet",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lightspeed",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "GV",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "20VC",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "APX",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Will Shu",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Jon McNeill",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lawrence Leuschner",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "founders of Zapp Joe Falter",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ],
+    [
+      {
+        "head": "Bonnet",
+        "type": "RECEIVES",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lightspeed",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "GV",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "20VC",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "APX",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Will Shu",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Jon McNeill",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      },
+      {
+        "head": "Lawrence Leuschner",
+        "type": "INVESTS",
+        "tail": "\u20ac5 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Kayrros",
+        "type": "RECEIVES",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "French Tech Souverainet\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "General Secretariat for Investment",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "French Public Investment Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "NewSpace Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Opera Tech Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      }
+    ],
+    [
+      {
+        "head": "Kayrros",
+        "type": "RECEIVES",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "French Tech Souverainet\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "General Secretariat for Investment",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Bpifrance",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "European Investment Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "NewSpace Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Opera Tech Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      }
+    ],
+    [
+      {
+        "head": "Kayrros",
+        "type": "RECEIVES",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "French Tech Souverainet\u00e9",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "General Secretariat for Investment",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "French Public Investment Bank",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "NewSpace Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "Opera Tech Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      },
+      {
+        "head": "historical investors",
+        "type": "INVESTS",
+        "tail": "\u20ac40 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "LightCode Photonics",
+        "type": "RECEIVES",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Taavi Kotka",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Sten Tamkivi",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Ragnar Sass",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      }
+    ],
+    [
+      {
+        "head": "LightCode Photonics",
+        "type": "RECEIVES",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Taavi Kotka",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Ragnar Sass",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      }
+    ],
+    [
+      {
+        "head": "LightCode Photonics",
+        "type": "RECEIVES",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "United Angels VC",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Superangel",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Martin Villig",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Taavi Kotka",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Sten Tamkivi",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      },
+      {
+        "head": "Ragnar Sass",
+        "type": "INVESTS",
+        "tail": "\u20ac425K"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "TypingDNA",
+        "type": "RECEIVES",
+        "tail": "\u20ac6.2 million"
+      },
+      {
+        "head": "Gradient Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac6.2 million"
+      },
+      {
+        "head": "Techstars Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac6.2 million"
+      },
+      {
+        "head": "Gapminder",
+        "type": "INVESTS",
+        "tail": "\u20ac6.2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "DRUID",
+        "type": "RECEIVES",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "Karma Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "GapMinder",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "other investors",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      }
+    ],
+    [
+      {
+        "head": "DRUID",
+        "type": "RECEIVES",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "Karma Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "Hoxton Ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      },
+      {
+        "head": "GapMinder",
+        "type": "INVESTS",
+        "tail": "\u20ac14.2 million"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "VRtuoso",
+        "type": "RECEIVES",
+        "tail": "\u20ac573k"
+      },
+      {
+        "head": "Symvan Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac573k"
+      },
+      {
+        "head": "Compagnia Bresciana Investimenti",
+        "type": "INVESTS",
+        "tail": "\u20ac573k"
+      }
+    ]
+  ],
+  [
+    [
+      {
+        "head": "Plum",
+        "type": "RECEIVES",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "dmg ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Ventura Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Global Brain",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "VentureFriends",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "500 Startups",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      }
+    ],
+    [
+      {
+        "head": "Plum",
+        "type": "RECEIVES",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "dmg ventures",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Ventura Capital",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Global Brain",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "VentureFriends",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "500 Startups",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      },
+      {
+        "head": "Crowdcube",
+        "type": "INVESTS",
+        "tail": "\u20ac21 million"
+      }
+    ]
+  ]
+]
