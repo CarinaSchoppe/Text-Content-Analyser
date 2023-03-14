@@ -100,7 +100,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
                 input_dict[0] = (first_entity, relation, second_entity)
                 dict_answers[input_text] = input_dict
         if debug:
-            print("worked", "input:", input_text, "answer:", answer)
+            print("worked", "input:", input_text, "answer:", valid_answers)
 
 
 def file_saver(text, document):
