@@ -131,27 +131,6 @@ Analyse this text:""", postfix="""just give the answers in the matching format a
     convert_chat_gpt_answer(input=input_text, output=answer)
 
 
-# def json_converter( semantic_dict, document):
-#     # list of semantic_elements
-#     # semantic_elements -> list of 2 lists
-#     # 1. list -> list of dicts head type tail
-#     top_list = []
-#     texts = [text for text in semantic_dict.keys()]
-#     for text in texts:
-#         text_list = []
-#
-#         semantic_elements = []
-#         for id, triple in semantic_dict[text].items():
-#             # dict id -> tuple
-#             head, type, tail = triple
-#             type_dict = {"head": head, "type": type, "tail": tail}
-#             semantic_elements.append(type_dict)
-#         text_list.append(semantic_elements)
-#         top_list.append(text_list)
-#     json_format = json.dumps(top_list)
-#     with open(f"../documents/results/{document}", "w", encoding="UTF-8") as file:
-#         file.write(json_format)
-
 
 def main():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
@@ -178,9 +157,6 @@ def main():
     #     generate_response(text)
     if debug:
         print("ai answers done")
-    # json_converter(semantic_dict=dict_semantic,  document="result.json")
-    # if debug:
-    #     print("json conversion done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
     print("code completed")
