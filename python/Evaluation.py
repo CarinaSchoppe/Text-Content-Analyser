@@ -64,24 +64,23 @@ def format_converter(semantic_dict, document):
 
 
 def convert_chat_gpt_answer(input: str, output: str):
-    # answer format = (Ent; relation; entity)
+    # answer format = (Ent; relation; first_entity)
     # convert into different variables
     answers = output.split("\n")
     for answer in answers:
         try:
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
-
-            entity = answer[0]
+            first_entity = answer[0]
             relation = answer[1][1:]
             second_entity = answer[2][1:]
 
-            if (input in dict_answers):
+            if input in dict_answers:
                 # get the len of elements in the dict_answers[input] and add 1 to it
-                dict_answers[input][len(dict_answers[input])] = (entity, relation, second_entity)
+                dict_answers[input][len(dict_answers[input])] = (first_entity, relation, second_entity)
             else:
                 input_dict = dict()
-                input_dict[0] = (entity, relation, second_entity)
+                input_dict[0] = (first_entity, relation, second_entity)
                 dict_answers[input] = input_dict
         except Exception as exception:
             print(exception)
@@ -159,7 +158,7 @@ def main():
         print("ai answers done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
-
+    print("code completed")
 
 if __name__ == "__main__":
     main()
