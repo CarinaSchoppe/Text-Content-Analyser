@@ -85,6 +85,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             print(exception)
             valid = False
             print(f"because: answer from chat gpt was not in the right format, format: {output}")
+            print(f"exact mistake: {answer}")
             print(f"input was: {input_text}")
             print("---------------------------------------------------------------------------")
             break
