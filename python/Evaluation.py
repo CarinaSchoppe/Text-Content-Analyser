@@ -63,10 +63,12 @@ def format_converter(semantic_dict, document):
     print("file conversion for file {} done".format(document))
 
 
-def convert_chat_gpt_answer(input: str, output: str):
+def convert_chat_gpt_answer(input_text: str, output: str):
     # answer format = (Ent; relation; first_entity)
     # convert into different variables
     answers = output.split("\n")
+    valid_answers = []
+    valid = True
     for answer in answers:
         if answer == "" or answer == " " or answer == "\n" or answer is None:
             continue
@@ -76,27 +78,38 @@ def convert_chat_gpt_answer(input: str, output: str):
             first_entity = answer[0]
             relation = answer[1][1:]
             second_entity = answer[2][1:]
+            valid_answers.append((first_entity, relation, second_entity))
 
-            if input in dict_answers:
+        except Exception as exception:
+            print(exception)
+            valid = False
+            print(f"because: answer from chat gpt was not in the right format, format: {output}")
+    if valid:
+        for answer in valid_answers:
+            first_entity, relation, second_entity = answer
+            if input_text in dict_answers:
                 # get the len of elements in the dict_answers[input] and add 1 to it
-                dict_answers[input][len(dict_answers[input])] = (first_entity, relation, second_entity)
+                dict_answers[input_text][len(dict_answers[input_text])] = (first_entity, relation, second_entity)
             else:
                 input_dict = dict()
                 input_dict[0] = (first_entity, relation, second_entity)
-                dict_answers[input] = input_dict
-
+                dict_answers[input_text] = input_dict
             if debug:
-                print("worked", "input:", input, "answer:", answer)
-        except Exception as exception:
-            print(exception)
-            print(f"because: answer from chat gpt was not in the right format, format: {output}")
-            exit()
+                print("worked", "input:", input_text, "answer:", answer)
+
 
 def file_saver(text, document):
     if text == "" or text == " " or text == "\n" or text is None:
         return
     with open(f"../documents/results/{document}.csv", "a", encoding="UTF-8") as file:
         file.write(text + "\n")
+
+
+def comparison_of_results(answers_dict, semantic_dict):
+    # compare the two dictionaries based on if a key in semantic dict is also present in answers_dict if not delete it
+    for text in semantic_dict.keys():
+        if text not in answers_dict:
+            del semantic_dict[text]
 
 
 def generate_response(input_text, prefix=f"""
@@ -135,8 +148,7 @@ Analyse this text:""", postfix="""just give the answers in the matching format a
         messages=[{"role": "user", "content": prefix + input_text + postfix}]
     )
     answer = completion.choices[0]["message"]["content"]
-    convert_chat_gpt_answer(input=input_text, output=answer)
-
+    convert_chat_gpt_answer(input_text=input_text, output=answer)
 
 
 def main():
@@ -164,6 +176,9 @@ def main():
         generate_response(text)
     if debug:
         print("ai answers done")
+    comparison_of_results(answers_dict=dict_answers, semantic_dict=dict_semantic)
+    if debug:
+        print("comparison of results done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
     print("code completed")
