@@ -73,6 +73,8 @@ def convert_chat_gpt_answer(input_text: str, output: str):
         if answer == "" or answer == " " or answer == "\n" or answer is None:
             continue
         try:
+            # remove everything before the first "(" and after the last ")"
+            answer = answer[answer.find("("):]
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
             first_entity = answer[0]
