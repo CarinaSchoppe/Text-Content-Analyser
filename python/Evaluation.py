@@ -138,22 +138,27 @@ def main():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
     for filename in files:
         extract_values_from_file(filename)
-    print("extraction and conversion done")
+    if debug:
+        print("extraction and conversion done")
     texts = {text for text in dict_entity.keys()}
-    print("text extraction done")
+    if debug:
+        print("text extraction done")
     # delete the files in f"../documents/results"
     try:
         for file in os.listdir("../documents/results"):
             os.remove(os.path.join("../documents/results", file))
     except Exception as _:
         pass
-    print("file deletion done")
+    if debug:
+        print("file deletion done")
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
-    print("file creation done")
+    if debug:
+        print("file creation done")
     for text in texts:
         generate_response(text)
-    print("ai answers done")
+    if debug:
+        print("ai answers done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
 
