@@ -7,7 +7,7 @@ import openai
 openai.api_key = "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"
 dict_entity = dict()
 dict_semantic = dict()
-debug = False
+debug = True
 dict_answers = dict()
 
 
@@ -68,6 +68,8 @@ def convert_chat_gpt_answer(input: str, output: str):
     # convert into different variables
     answers = output.split("\n")
     for answer in answers:
+        if answer == "" or answer == " " or answer == "\n" or answer is None:
+            continue
         try:
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
@@ -84,7 +86,7 @@ def convert_chat_gpt_answer(input: str, output: str):
                 dict_answers[input] = input_dict
         except Exception as exception:
             print(exception)
-            print(f"because: answer from chat gpt was not in the right format, format: {output}")
+        #  print(f"because: answer from chat gpt was not in the right format, format: {output}")
 
 
 def file_saver(text, document):
