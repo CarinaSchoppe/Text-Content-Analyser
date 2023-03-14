@@ -43,8 +43,6 @@ def extract_values_from_file(filepath, path="../documents/xmi/"):
         id = child.attrib["{http://www.omg.org/XMI}id"]
         # governor relation dependent
         dict_semantic[file_text][id] = (governor, relation, dependent)
-        print(dict_semantic)
-        exit()
         if debug:
             print(f"text={file_text} id={id} result={dict_semantic[file_text][id]}")
 
@@ -62,6 +60,7 @@ def format_converter(semantic_dict, document):
         # reperate all results in result in one string seperated by "  "
         final_string = "  ".join(results)
         file_saver(final_string, document)
+    print("file conversion for file {} done".format(document))
 
 
 def convert_chat_gpt_answer(input: str, answer: str):
@@ -99,11 +98,14 @@ def main():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
     for filename in files:
         extract_values_from_file(filename)
+    print("extraction and conversion done")
     texts = {text for text in dict_entity.keys()}
+    print("text extraction done")
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
     for text in texts:
         generate_response(text)
+    print("ai answers done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
 
