@@ -168,8 +168,6 @@ def main():
     if debug:
         print("extraction and conversion done")
 
-    json_converter(dict_semantic, dict_semantic, "result.json")
-    exit()
     texts = {text for text in dict_entity.keys()}
     if debug:
         print("text extraction done")
@@ -189,6 +187,7 @@ def main():
         generate_response(text)
     if debug:
         print("ai answers done")
+    json_converter(dict_semantic, dict_answers, "result.json")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
     print("code completed")
