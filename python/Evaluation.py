@@ -69,17 +69,21 @@ def convert_chat_gpt_answer(input: str, output: str):
     answers = output.split("\n")
     for answer in answers:
         try:
+
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
+
             entity = answer[0]
             relation = answer[1][1:]
             second_entity = answer[2][1:]
+
             if (input in dict_answers):
                 # get the len of elements in the dict_answers[input] and add 1 to it
                 dict_answers[input][len(dict_answers[input])] = (entity, relation, second_entity)
             else:
                 input_dict = dict()
                 input_dict[0] = (entity, relation, second_entity)
+                dict_answers[input] = input_dict
         except Exception as exception:
             print(exception)
 
