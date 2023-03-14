@@ -1,5 +1,5 @@
 import ContentAnalysis as content_analysis
-import OpenAI as ai
+import OpenAIAnalysis as ai
 import Scraper
 
 
