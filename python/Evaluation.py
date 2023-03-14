@@ -84,6 +84,7 @@ def convert_chat_gpt_answer(input: str, output: str):
                 dict_answers[input] = input_dict
         except Exception as exception:
             print(exception)
+            print(f"because: answer from chat gpt was not in the right format, format: {output}")
 
 
 def file_saver(text, document):
@@ -93,7 +94,8 @@ def file_saver(text, document):
         file.write(text + "\n")
 
 
-def generate_response(input_text, prefix=f"""Act like a data engineer. You need to extract relationships in the form of triplets from articles that deal with investment rounds in the start-up scene. I will give you some examples so you know what to extract. Do you understand?
+def generate_response(input_text, prefix=f"""
+Act like a data engineer. You need to extract relationships in the form of triplets from articles that deal with investment rounds in the start-up scene. I will give you some examples so you know what to extract. Do you understand?
 
 1. example: “Founded in 2015, the banking app, which focuses exclusively on the Nordics, raised €13 million and expanded to Norway back in February.” 
 In this case you should extract: (€13 million, was received, February) --> (money, was received, date)
