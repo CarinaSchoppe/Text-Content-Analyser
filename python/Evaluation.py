@@ -155,8 +155,8 @@ def main():
     file_saver("triplets", "self_results")
     if debug:
         print("file creation done")
-    # for text in texts:
-    #     generate_response(text)
+    for text in texts:
+        generate_response(text)
     if debug:
         print("ai answers done")
     format_converter(dict_semantic, "self_results")
