@@ -84,6 +84,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             print(exception)
             valid = False
             print(f"because: answer from chat gpt was not in the right format, format: {output}")
+            break
     if valid:
         for answer in valid_answers:
             first_entity, relation, second_entity = answer
@@ -94,8 +95,8 @@ def convert_chat_gpt_answer(input_text: str, output: str):
                 input_dict = dict()
                 input_dict[0] = (first_entity, relation, second_entity)
                 dict_answers[input_text] = input_dict
-            if debug:
-                print("worked", "input:", input_text, "answer:", answer)
+        if debug:
+            print("worked", "input:", input_text, "answer:", answer)
 
 
 def file_saver(text, document):
