@@ -146,7 +146,6 @@ def main():
     except Exception as _:
         pass
     print("file deletion done")
-
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
     print("file creation done")
