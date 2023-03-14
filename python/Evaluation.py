@@ -101,6 +101,14 @@ def main():
     print("extraction and conversion done")
     texts = {text for text in dict_entity.keys()}
     print("text extraction done")
+
+    # delete the files in f"../documents/results"
+    try:
+        for file in os.listdir("../documents/results"):
+            os.remove(os.path.join("../documents/results", file))
+    except Exception as _:
+        pass
+
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
     for text in texts:
