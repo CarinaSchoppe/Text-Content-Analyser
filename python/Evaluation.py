@@ -99,9 +99,11 @@ def main():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
     for filename in files:
         extract_values_from_file(filename)
-    texts = [text for text in dict_entity.keys()]
+    texts = {text for text in dict_entity.keys()}
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
+    for text in texts:
+        generate_response(text)
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
 
