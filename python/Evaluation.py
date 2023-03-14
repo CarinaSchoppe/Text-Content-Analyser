@@ -64,26 +64,24 @@ def format_converter(semantic_dict, document):
 
 
 def convert_chat_gpt_answer(input: str, output: str):
-    global dict_answers
     # answer format = (Ent; relation; entity)
     # convert into differeent variables
     answers = output.split("\n")
     for answer in answers:
         try:
             answer = re.sub(r"[\(\)]", "", answer)
-            answer = answer.split(";")
+            answer = answer.split(",")
             entity = answer[0]
             relation = answer[1][1:]
-            entity2 = answer[2][1:]
+            second_entity = answer[2][1:]
             if (input in dict_answers):
                 # get the len of elements in the dict_answers[input] and add 1 to it
-                dict_answers[input][len(dict_answers[input])] = (entity, relation, entity2)
+                dict_answers[input][len(dict_answers[input])] = (entity, relation, second_entity)
             else:
                 input_dict = dict()
-                input_dict[0] = (entity, relation, entity2)
-            print("worked!")
-        except Exception as _:
-            pass
+                input_dict[0] = (entity, relation, second_entity)
+        except Exception as exception:
+            print(exception)
 
 
 def file_saver(text, document):
@@ -126,7 +124,8 @@ Analyse this text:""", postfix="""just give the answers in the matching format a
         messages=[{"role": "user", "content": prefix + input_text + postfix}]
     )
     answer = completion.choices[0]["message"]["content"]
-    convert_chat_gpt_answer(input=input_text, answer=answer)
+    print(f"AI ANSWER: {answer}")
+    convert_chat_gpt_answer(input=input_text, output=answer)
 
 
 def main():
@@ -149,7 +148,23 @@ def main():
     print("file creation done")
     # for text in texts:
     # generate_response(text)
-    generate_response(list(texts)[0])
+    convert_chat_gpt_answer(
+        """BOOKR Kids, a reading-based early learning ‘edu-tainment’ company has disclosed €2 million in new funding and a further €2 million in convertible note. The round is led by Bonitas, a private VC owned by billionaire Sándor Csányi. BOOKR Kids will use the financing to take their English-learning literacy programme BOOKR Class to the global education market, and boost further the company goal of mitigating COVID-19’s impact on education. The past year has been a turning point for BOOKR Kids, as much as for other edtech players. The importance of digital educational materials has increased enormously, so the company, creating interactive animated story books with educational games, did not stop for a moment. BOOKR Class has also been recognized during school closure as an official textbook in Hungary and is now used by 100K Hungarian students. With the help of this investment, BOOKR Kids will develop more innovative content and a more comprehensive curriculum, including 21st-century skills. To facilitate language acquisition, BOOKR Kids’ animated interactive e-books and apps follow a researched methodology. The texts and activities are designed to support individual and classroom use as well. The illustrations and animations support the understanding of the texts, but they are moderate enough not to distract users from reading. Moreover, the entertaining educational games help to highlight the main linguistic elements and features for a more focused, intentional learning and practice. Besides literacy, the format itself will address 21st-century skills as well such as creativity, communication, collaboration and critical thinking.""", """(BOOKR Kids, disclosed, €2 million)
+(BOOKR Kids, disclosed, €2 million in convertible note)
+(Bonitas, leads round, BOOKR Kids)
+(Bonitas, is owned by, Sándor Csányi)
+(BOOKR Kids, will use financing, take BOOKR Class to global education market)
+(BOOKR Kids, will use financing, boost company goal of mitigating COVID-19’s impact on education)
+(BOOKR Class, recognized as official textbook, Hungary)
+(BOOKR Class, used by, 100K Hungarian students)
+(BOOKR Kids, will develop, more innovative content)
+(BOOKR Kids, will develop, more comprehensive curriculum)
+(BOOKR Kids' e-books and apps, follow, researched methodology)
+(e-books and apps, designed to support, individual and classroom use)
+(illustrations and animations, support, understanding of texts)
+(entertaining educational games, help to highlight, linguistic elements and features)
+(format, will address, 21st-century skills)
+(format, will address, creativity, communication, collaboration, and critical thinking)""")
     print("ai answers done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
@@ -157,4 +172,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # TODO:
