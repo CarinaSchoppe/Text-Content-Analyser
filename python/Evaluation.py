@@ -98,7 +98,6 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             relation = answer[1][1:]
             second_entity = answer[2][1:]
             valid_answers.append((first_entity, relation, second_entity))
-
         except Exception as exception:
             print("---------------------------------------------------------------------------")
             print(exception)
@@ -106,7 +105,6 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             print(f"exact mistake: {answer}")
             print(f"input was: {input_text}")
             print("---------------------------------------------------------------------------")
-
     for answer in valid_answers:
         first_entity, relation, second_entity = answer
         if input_text in dict_answers:
@@ -140,7 +138,6 @@ def comparison_of_results(answers_dict, semantic_dict):
 
 def generate_response(input_text, prefix=""):
     dict_answers = {}
-    prompt_results = []
 
     messages = [{"role": "user", "content": input_text}]
 
@@ -152,21 +149,21 @@ def generate_response(input_text, prefix=""):
         "Check your answers again with these general triplets and adapt them: \n(startup name, receives, amount of money)\n(amount of money, was received in, date)\n(amount of money, roundofinvestment, funding round)\n(startup name, received in total, amount of money)\n(amount of money, has investment part, amount of money)\n(investor name, invests part, amount of money)\n(investor name, invests, amount of money)\n(startup name, valuation at, amount of money)"
     ]
 
-    for idx, prompt in enumerate(prompts):
-        if idx == 0 and prefix is not None:
-            prompt = prefix + prompt
+    for index, prompt in enumerate(prompts):
+        if index == 0 and prefix is not None:
+            prompt += prefix
 
         messages.append({"role": "system", "content": prompt})
         completion = openai.ChatCompletion.create(
-            model="gpt-4",  # 3.5-turbo
+            model="gpt-3.5-turbo",  # 3.5-turbo
             messages=messages,
         )
 
-        result = completion.choices[0].message['content'].strip()
-        prompt_results.append(result)
+        # result = completion.choices[0]["message"]["content"]  #carinas variante
+        result = completion.choices[0]["message"]["content"]  # result = completion.choices[0].message['content']
 
         # Das Ergebnis des letzten Prompts im dict_answers speichern
-        if idx == len(prompts) - 1:
+        if index == len(prompts) - 1:
             dict_answers[prompt] = result
 
     # return prompt_results, dict_answers
