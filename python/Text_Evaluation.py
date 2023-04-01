@@ -144,10 +144,22 @@ def evaluate():
     print(predictions_cleaned)
 
     def calculate_metrics(tp, fp, rel):
-        precision = 100 * (len(tp) / (len(tp) + len(fp)))
-        recall = 100 * (len(tp) / rel)
-        f1score = 2 * ((precision * recall) / (precision + recall))
+        if len(tp) + len(fp) == 0:
+            precision = None
+        else:
+            precision = round(100 * (len(tp) / (len(tp) + len(fp))), 2)
+        if rel == 0:
+            recall = None
+        else:
+            recall = round(100 * (len(tp) / rel), 2)
+        if precision is None or recall is None:
+            f1score = None
+        elif (precision + recall) == 0:
+            f1score = None
+        else:
+            f1score = round(2 * ((precision * recall) / (precision + recall)), 2)
         return precision, recall, f1score
+
 
     def tp_fp_fn_rel(approach, gold, pred):
         tp, fp, rel, fn = list(), list(), int(), list()
@@ -297,9 +309,12 @@ def evaluate():
 
     print('METRICS')
     print('-------------------------')
-    print('Precision: ', round(precision, 2), '%')
-    print('Recall: ', round(recall, 2), '%')
-    print('F1-Score: ', round(f1score, 2), '%')
+    print('Precision: ', round(precision, 2) if precision is not None else 'N/A', '%' if precision is not None else '')
+    print('Recall: ', round(recall, 2) if recall is not None else 'N/A', '%' if recall is not None else '')
+    if f1score is None:
+        print('F1-Score: N/A')
+    else:
+        print(f'F1-Score: {f1score}%')
 
     def error_analysis(approach, gold, pred):
         tp, fp, rel, fn, index_fp, index_fn = list(), list(), int(), list(), list(), list()
@@ -328,6 +343,4 @@ def evaluate():
     new_list = [index_fp, fp_e, index_fn, fn_e]
     df = pd.DataFrame(new_list)
 
-    writer = pd.ExcelWriter('errors.xlsx', engine='xlsxwriter')
-    df.to_excel(writer, sheet_name='errors_raw', index=False)
-    writer.save()
+    df.to_excel('errors.xlsx', sheet_name='errors_raw', index=False, engine='xlsxwriter')

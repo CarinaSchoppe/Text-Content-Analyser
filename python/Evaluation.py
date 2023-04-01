@@ -19,6 +19,10 @@ def extract_values_from_file(file, path="../documents/xmi/"):
     tree = elementtree.parse(path + file)
     root = tree.getroot()
     file_text = "".join(open(path + file, "r", encoding="UTF-8").readlines()).split('sofaString="')[1].split('"')[0]
+    file_text = file_text.replace('&amp;', ' ')
+    print(file_text)
+    # print('\n shekhar1 \n')
+
     dict_entity[file_text] = dict()
     dict_semantic[file_text] = dict()
     # extraction of entities
@@ -32,8 +36,16 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         end = int(child.attrib["end"])
         text = file_text[begin:end]
         dict_entity[file_text][id] = text
+
+        # print('\n id: ', id)
+        # print('\n begin: ', begin)
+        # print('\n end: ', end)
+        # print('\n text: ', text)
+
         if debug:
+            # print('\n hello \n')
             print(f"text={file_text} id={id} result={dict_entity[file_text][id]}")
+
     for child in root:
         if "SemanticRelations" not in child.tag:
             continue
@@ -44,7 +56,9 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         # governor relation dependent
         dict_semantic[file_text][id] = (governor, relation, dependent)
         if debug:
+            # print('\n hello2 \n')
             print(f"text={file_text} id={id} result={dict_semantic[file_text][id]}")
+            # print(dict_semantic[file_text])
 
 
 def format_converter(semantic_dict, document):
@@ -53,7 +67,9 @@ def format_converter(semantic_dict, document):
         for id, triple in value.items():
             # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
             if debug:
+                # print('\n hello3 \n')
                 print(f"old: {triple[0]} {triple[1]} {triple[2]}")
+                # print('\n hello4 \n')
                 print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
             result = f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}"
             results.append(result)
@@ -61,6 +77,7 @@ def format_converter(semantic_dict, document):
         final_string = "  ".join(results)
         file_saver(final_string, document)
     print("file conversion for file {} done".format(document))
+    # print(file_saver)
 
 
 def convert_chat_gpt_answer(input_text: str, output: str):
@@ -85,24 +102,22 @@ def convert_chat_gpt_answer(input_text: str, output: str):
         except Exception as exception:
             print("---------------------------------------------------------------------------")
             print(exception)
-            valid = False
             print(f"because: answer from chat gpt was not in the right format, format: {output}")
             print(f"exact mistake: {answer}")
             print(f"input was: {input_text}")
             print("---------------------------------------------------------------------------")
-            break
-    if valid:
-        for answer in valid_answers:
-            first_entity, relation, second_entity = answer
-            if input_text in dict_answers:
-                # get the len of elements in the dict_answers[input] and add 1 to it
-                dict_answers[input_text][len(dict_answers[input_text])] = (first_entity, relation, second_entity)
-            else:
-                input_dict = dict()
-                input_dict[0] = (first_entity, relation, second_entity)
-                dict_answers[input_text] = input_dict
-        if debug:
-            print("worked", "input:", input_text, "answer:", valid_answers)
+
+    for answer in valid_answers:
+        first_entity, relation, second_entity = answer
+        if input_text in dict_answers:
+            # get the len of elements in the dict_answers[input] and add 1 to it
+            dict_answers[input_text][len(dict_answers[input_text])] = (first_entity, relation, second_entity)
+        else:
+            input_dict = dict()
+            input_dict[0] = (first_entity, relation, second_entity)
+            dict_answers[input_text] = input_dict
+    if debug:
+        print("worked", "input:", input_text, "answer:", valid_answers)
 
 
 def file_saver(text, document):
@@ -113,49 +128,54 @@ def file_saver(text, document):
 
 
 def comparison_of_results(answers_dict, semantic_dict):
-    # compare the two dictionaries based on if a key in semantic dict is also present in answers_dict if not delete it
+    # create a list of keys to remove from the semantic_dict
+    keys_to_remove = []
     for text in semantic_dict.keys():
         if text not in answers_dict:
-            del semantic_dict[text]
+            keys_to_remove.append(text)
+    # remove the keys from the semantic_dict
+    for key in keys_to_remove:
+        del semantic_dict[key]
 
 
-def generate_response(input_text, prefix=f"""
-Act like a data engineer. You need to extract relationships in the form of triplets from articles that deal with investment rounds in the start-up scene. I will give you some examples so you know what to extract. Do you understand?
+def generate_response(input_text, prefix=""):
+    dict_answers = {}
+    prompt_results = []
 
-1. example: “Founded in 2015, the banking app, which focuses exclusively on the Nordics, raised €13 million and expanded to Norway back in February.” 
-In this case you should extract: (€13 million, was received, February) --> (money, was received, date)
-And you are only allowed to use the relation "was received"!
+    messages = [{"role": "user", "content": input_text}]
 
-2. example: “BetterUp, a US-based rival CoachHub, recently raised a $103 million Series C.” 
-In this case you should extract: ($103 million, in round, Series C) --> (money, in round, funding round)
-And you are only allowed to use the relation "in round"!
+    prompts = [
+        "Extract from this article the name of the startup, the amount of money invested, the names of the investors, the round of financing, the date the investment took place.\nFill in the following form:\nDate:\nStartup:\nInvestors:\nInvested amount:\nFinancing round:",
+        "If there is something not specified, write XXX",
+        "Please extract the relationship between two entities based on the given information, and represent it in the form of a triplet. The triplet should consist of a subject, a relationship, and an object. The subject represents the first entity, the relationship represents the connection between the two entities, and the object represents the second entity. Only use the relationships specified in the given examples and extract only the relevant triplets that pertain to the investment rounds in the startup scene."
+        "Compare your triplets with these examples and adapt them: 1. Example: Digital coaching platform CoachHub has secured new financing of approx. €25 million led by new investor Draper Esprit, alongside existing investors HV Capital, Partech, Speedinvest, signals Venture Capital and RTP Global. This latest round brings the total funds raised to over €40 million following the company’s +€16 million funding round in late 2019.\n(Coachhub, receives, €25 million)\n(Coachhub, receives, €16 million)\n(Coachhub, received in total, €40 million)\n(€16 million, was received in, 2019)\n(Draper Esprit, invests, €25 million)\n(HV Capital, invests, €25 million)\n(Partech, invests, €25 million)\n(Speedinvest, invests, €25 million)\n(signals Venture Capital, invests, €25 million)\n(RTP Global, invests, €25 million) \n\n 2. Example: The Munich-based startup Userlane just raised €4 million to finance its expansion and to further develop its product. Userlane, which was founded in 2015, offers a navigation system for software that allows users to understand and operate any application without formal training. The Series A investment round was led by Capnamic Ventures, and joined by High Tech Gründerfonds, main incubator, and FTR Ventures.(Userlane, receives, €4 million)\n(€4 million, roundofinvestment, Series A)\n(Capnamic Ventures, invests, €4 million)\n(High Tech Gründerfonds, invests, €4 million)\n(FTR Ventures, invests, €4 million) \n\n 3. Example: Igyxos has now raised €7.5 million in a Series A round led by Bpifrance through its Accelerate Biotechnologies Santé Fund, with participation from the Go Capital Amorçage II and Loire Valley Invest Funds managed by Go Capital and the Fonds Emergence Innovation II managed by Sofimac Innovation.\n(Igyxos, receives, €7.5 million)\n(€2.8 million, roundofinvestment, seed round)\n(Bpifrance, invests, €7.5 million)\n(Go Capital , invests, €7.5 million)\n(Sofimac Innovation, invests, €7.5 million) \n\n 4. Example: Today learning platform Masterplan.com has announced raising €13 million total funding, with existing investors only participating in the round. With the additional capital, Masterplan intends to further expand the development and distribution of its proprietary software.\n(Masterplan.com, receives, €13 million)\n(existing investors, invests, €13 million) \n\n 5. Example: Blacklane, the company that provides professional ground transportation at lowest rates around the globe, has added a mid-seven-digit round of funding at a valuation in the nine-figure Euro range from Japan-based Recruit Holdings Co., through its investment subsidiary RSP Fund No. 5, LLC \n(Blacklane, receives, mid-seven-digit)\n(Blacklane, valuation at, nine-figure Euro range)\n(Recruit Holdings Co., invests, mid-seven-digit) \n\n 6. Example: Goodlord, one of the UK's leading property technology startups, has today announced the successful close of a Series B funding round. Following on from its 2017 €7 million Series A round, the business has now secured a further €7 million of funding, with the latest round led by new investor Finch Capital, supported by existing investors, Rocket Internet and angel investors\n(Goodlord, receives, €7 million)\n(Goodlord, receives, €7 million)\n(€7 million, was received, today)\n(€7 million, was received, 2017)\n(€7 million, roundofinvestment, Series B)\n(€7 million, roundofinvestment, Series A)\n(Finch Capital, invests, €7 million)\n(Rocket Internet, invests, €7 million)\n(angel investors, invests, €7 million) \n\n 7. Example: The €1.86 million investment round consisted of a €1.15 million equity investment from Vendep Capital, a Northern European SaaS focused venture capital company, and a €751K loan from Business Finland\n(Trustmary, received total, €1.86 million)\n(€1.86 million, has investment part, €1.15 million)\n(€1.86 million, has investment part, €751k)\n(Vendep Capital, invests part, €1.15 million)\n(Business Finland, invests part, €751k)",
+        "Check your answers again with these general triplets and adapt them: \n(startup name, receives, amount of money)\n(amount of money, was received in, date)\n(amount of money, roundofinvestment, funding round)\n(startup name, received in total, amount of money)\n(amount of money, has investment part, amount of money)\n(investor name, invests part, amount of money)\n(investor name, invests, amount of money)\n(startup name, valuation at, amount of money)"
+    ]
 
+    for idx, prompt in enumerate(prompts):
+        if idx == 0 and prefix is not None:
+            prompt = prefix + prompt
 
-3. example: “The €1.86 million investment round of Trustmary consisted of a €1.15 million equity investment from Vendep Capital, a Northern European SaaS focused venture capital company, and a €751K loan from Business Finland”
+        messages.append({"role": "system", "content": prompt})
+        completion = openai.ChatCompletion.create(
+            model="gpt-4",  # 3.5-turbo
+            messages=messages,
+        )
 
-In this case you should extract: 
-(Trustmary, received total, €1.86 million)
-(€1.86 million, has investment part, €1.15 million)
-(€1.86 million, has investment part, €751k)
-(Vendep Capital, invests part, €1.15 million)
-(Business Finland, invests part, €751k)
+        result = completion.choices[0].message['content'].strip()
+        prompt_results.append(result)
 
+        # Das Ergebnis des letzten Prompts im dict_answers speichern
+        if idx == len(prompts) - 1:
+            dict_answers[prompt] = result
 
-4. example: “Founded in 2015, the Fineway has just increased its Series A round raised in early November with an additional €6 million, bringing the total round size to €13 million.”
-(Fineway, received, €6 million)
-(€6 million, was received, November)
-(€6 million, in round, Series A)
-(Fineway, received total, €13 million)
-(€13 million, in round, series A)
+    # return prompt_results, dict_answers
 
-
-Analyse this text:""", postfix="""just give the answers in the matching format and only the (enitity,relation,entity) answers no other sentence should be in the answer so without the sentence 'Here are the extracted triplets from the text'"""):
-    completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[{"role": "user", "content": prefix + input_text + postfix}]
-    )
-    answer = completion.choices[0]["message"]["content"]
-    convert_chat_gpt_answer(input_text=input_text, output=answer)
+    # completion = openai.ChatCompletion.create(
+    # model="gpt-3.5-turbo",
+    # messages=[{"role": "user", "content": prefix + input_text}])
+    # answer = completion.choices[0]["message"]["content"]
+    convert_chat_gpt_answer(input_text=input_text, output=result)
 
 
 def main():
