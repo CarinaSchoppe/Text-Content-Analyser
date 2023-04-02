@@ -180,11 +180,11 @@ def evaluate():
                     if u not in i[1]:
                         fn.append(u)
 
-        """PROBLEM FOR ALL OF THEM"""
-        """WE CANNOT COMPARE PER TRIPLET BUT PER ARTICLE"""
-        """THEREFORE, ONLY SET-WISE COMPARISON MAKES SENSE"""
+        """PROBLEM FOR ALL OF THEM
+        WE CANNOT COMPARE PER TRIPLET BUT PER ARTICLE
+        THEREFORE, ONLY SET-WISE COMPARISON MAKES SENSE
 
-        """tp if head is correctly predicted"""
+        tp if head is correctly predicted"""
         if approach == 'head':
             # calculate tp and fp
             for i in enumerate(pred):
@@ -271,25 +271,6 @@ def evaluate():
         return tp, fp, fn, rel
 
     def confusion_matrix(tp, fp, fn, title, tn=0):
-        # sns.set(font_scale=2)
-        # cm = np.array([[len(tp), len(fp)], [len(fn), tn]])
-        # classes = ['true triplets', 'false triplets']
-        #
-        # fig, axs = plt.subplots()
-        # plt.subplots_adjust(left=0.2, bottom=0.2)
-        #
-        # hm = sns.heatmap(cm, cmap = custom_color_map, annot=True, xticklabels=classes, yticklabels=classes, cbar=False, fmt="d",ax = axs)
-        # hm.set(title=title, xlabel="predicted label", ylabel="true label")
-        # sns.set_theme(rc = {'figure.figsize':(10,7)})
-        # precision, recall, f1score = calculate_metrics(tp, fp, rel)
-        #
-        # table = plt.table(cellText=[[round(precision, 1)], [round(recall, 1)], [round(f1score, 1)]],
-        #                 rowLabels=['Precision', 'Recall', 'F1-Score'],
-        #                 colLabels=['Value [%]'],
-        #                 bbox = ([0.3, -0.6, 0.5, 0.3]))
-        #
-        # fig.savefig('test.svg')
-        # plt.show()
 
         sns.set(font_scale=2)
         cm = np.array([[len(tp), len(fn)], [len(fp), tn]])
@@ -304,7 +285,6 @@ def evaluate():
 
     precision, recall, f1score = calculate_metrics(tp, fp, rel)
 
-    # title = "confusion matrix for predictions on text"
     confusion_matrix(tp, fp, fn, title=None)
 
     print('METRICS')

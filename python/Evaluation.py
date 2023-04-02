@@ -9,6 +9,7 @@ openai.api_key = "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"
 dict_entity = dict()
 dict_semantic = dict()
 debug = True
+debug_full = False
 dict_answers = dict()
 
 
@@ -21,7 +22,6 @@ def extract_values_from_file(file, path="../documents/xmi/"):
     root = tree.getroot()
     file_text = "".join(open(path + file, "r", encoding="UTF-8").readlines()).split('sofaString="')[1].split('"')[0]
     file_text = file_text.replace('&amp;', ' ')
-    print(file_text)
 
     dict_entity[file_text] = dict()
     dict_semantic[file_text] = dict()
@@ -36,7 +36,7 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         text = file_text[begin:end]
         dict_entity[file_text][id] = text
 
-        if debug:
+        if debug_full and debug:
             print(f"text={file_text} id={id} result={dict_entity[file_text][id]}")
 
     for child in root:
@@ -48,7 +48,7 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         id = child.attrib["{http://www.omg.org/XMI}id"]
         # governor relation dependent
         dict_semantic[file_text][id] = (governor, relation, dependent)
-        if debug:
+        if debug_full and debug:
             print(f"text={file_text} id={id} result={dict_semantic[file_text][id]}")
 
 
@@ -59,11 +59,10 @@ def format_converter(semantic_dict, document):
             continue
         for id, triple in value.items():
             # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
-            if debug:
+            if debug_full and debug:
                 print(f"old: {triple[0]} {triple[1]} {triple[2]}")
                 print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
-            result = f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}"
-            results.append(result)
+            results.append(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
         # reperate all results in result in one string seperated by "  "
         final_string = "  ".join(results)
         file_saver(final_string, document)
@@ -162,7 +161,7 @@ def generate_response(input_text, prefix=None):
     except Exception as _:
         pass
     # make the current thread sleep for 4 seconds
-    time.sleep(((60 / 20) * len(prompts)) + 1)
+    time.sleep(((60 / 20) * len(prompts)) + .1)
 
 
 def main():
