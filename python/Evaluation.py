@@ -151,10 +151,6 @@ def generate_response(input_text, prefix=None):
         )
 
         result = completion.choices[0]["message"]["content"]
-        # TODO: nötig?
-        # Das Ergebnis des letzten Prompts im dict_answers speichern
-        # if index == len(prompts) - 1:
-        #     dict_answers[prompt] = result
 
     try:
         convert_chat_gpt_answer(input_text=input_text, output=result)
