@@ -1,5 +1,6 @@
 import os
 import re
+import time
 import xml.etree.ElementTree as elementtree
 
 import openai
@@ -155,7 +156,7 @@ def generate_response(input_text, prefix=""):
 
         messages.append({"role": "system", "content": prompt})
         completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # 3.5-turbo
+            model="gpt-4",  # 3.5-turbo
             messages=messages,
         )
 
@@ -173,6 +174,8 @@ def generate_response(input_text, prefix=""):
     # messages=[{"role": "user", "content": prefix + input_text}])
     # answer = completion.choices[0]["message"]["content"]
     convert_chat_gpt_answer(input_text=input_text, output=result)
+    # make the current thread sleep for 4 seconds
+    time.sleep(((60 / 20) * len(prompts)) + 1)
 
 
 def main():
