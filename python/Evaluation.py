@@ -165,7 +165,7 @@ def generate_response(input_text, prefix=None):
     except Exception as _:
         pass
     # make the current thread sleep for 4 seconds
-    time.sleep(((60 / 20) * len(prompts)) + .1)
+    time.sleep(((60 / 20) * len(prompts)) + 1)
 
 
 def main():
