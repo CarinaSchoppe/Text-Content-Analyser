@@ -9,7 +9,7 @@ openai.api_key = "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"
 dict_entity = dict()
 dict_semantic = dict()
 debug = True
-debug_full = False
+debug_full = True
 dict_answers = dict()
 
 
@@ -59,7 +59,7 @@ def format_converter(semantic_dict, document):
             continue
         for id, triple in value.items():
             # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
-            if debug_full and debug:
+            if debug:
                 print(f"old: {triple[0]} {triple[1]} {triple[2]}")
                 print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
             results.append(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
@@ -74,13 +74,15 @@ def convert_chat_gpt_answer(input_text: str, output: str):
     # convert into different variables
     answers = output.split("\n")
     valid_answers = []
-    for answer in answers:
+    for index, answer in enumerate(answers):
         if answer == "" or answer == " " or answer == "\n" or answer is None:
             continue
         try:
             # remove everything before the first "(" and after the last ")"
             clean_answer = answer
-            if "xxx" in first_entity.lower() or "xxx" in relation.lower() or "xxx" in second_entity.lower():
+            # check if "xxx" is in any answer (lowercased) string than continue
+            if "xxx" in clean_answer.lower():
+                print("XXX in answer!")
                 raise Exception("xxx in answer")
             answer = answer[answer.find("("):]
             answer = re.sub(r"[\(\)]", "", answer)
@@ -88,15 +90,15 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             first_entity = answer[0]
             relation = answer[1][1:]
             second_entity = answer[2][1:]
-            # check if "xxx" is in any answer (lowercased) string than continue
-
+            if debug and debug_full:
+                print(f"answer: {(first_entity, relation, second_entity)} added to valid answers")
             valid_answers.append((first_entity, relation, second_entity))
         except Exception as exception:
             print("---------------------------------------------------------------------------")
             print(exception)
             print(f"because answer from chat-gpt was not in the right format, format:\n{output}\n")
-            print(f"exact mistake: {clean_answer}")
-            print(f"input was: {input_text}")
+            print(f"exact mistake: '{clean_answer}'")
+            print(f"input was: '{input_text}'")
             print("---------------------------------------------------------------------------")
     for answer in valid_answers:
         first_entity, relation, second_entity = answer
@@ -107,7 +109,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             input_dict = dict()
             input_dict[0] = (first_entity, relation, second_entity)
             dict_answers[input_text] = input_dict
-    if debug:
+    if debug and valid_answers != []:
         print("worked", "input:", input_text, "answer:", valid_answers)
 
 
@@ -121,12 +123,16 @@ def file_saver(text, document):
 def comparison_of_results(answers_dict, semantic_dict):
     # create a list of keys to remove from the semantic_dict
     keys_to_remove = []
-    for text in semantic_dict.keys():
-        if text not in answers_dict:
-            keys_to_remove.append(text)
+    for key_text in semantic_dict.keys():
+        if key_text not in answers_dict:
+            keys_to_remove.append(key_text)
     # remove the keys from the semantic_dict
     for key in keys_to_remove:
+        if debug and debug_full:
+            print(f"key {key} is removed from semantic_dict")
         del semantic_dict[key]
+    if debug:
+        print("key comparison is done")
 
 
 def generate_response(input_text, prefix=None):
@@ -187,9 +193,9 @@ def main():
         generate_response(text)
     if debug:
         print("ai answers done")
+    print(dict_answers)
+    print(dict_semantic)
     comparison_of_results(answers_dict=dict_answers, semantic_dict=dict_semantic)
-    if debug:
-        print("comparison of results done")
     format_converter(dict_semantic, "self_results")
     format_converter(dict_answers, "ai_results")
     print("code completed")
