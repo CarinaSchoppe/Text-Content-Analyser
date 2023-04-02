@@ -80,6 +80,8 @@ def convert_chat_gpt_answer(input_text: str, output: str):
         try:
             # remove everything before the first "(" and after the last ")"
             clean_answer = answer
+            if "xxx" in first_entity.lower() or "xxx" in relation.lower() or "xxx" in second_entity.lower():
+                raise Exception("xxx in answer")
             answer = answer[answer.find("("):]
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
@@ -87,13 +89,12 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             relation = answer[1][1:]
             second_entity = answer[2][1:]
             # check if "xxx" is in any answer (lowercased) string than continue
-            if "xxx" in first_entity.lower() or "xxx" in relation.lower() or "xxx" in second_entity.lower():
-                raise Exception("xxx in answer")
+
             valid_answers.append((first_entity, relation, second_entity))
         except Exception as exception:
             print("---------------------------------------------------------------------------")
             print(exception)
-            print(f"because: answer from chat gpt was not in the right format, format:\n{output}")
+            print(f"because answer from chat-gpt was not in the right format, format:\n{output}\n")
             print(f"exact mistake: {clean_answer}")
             print(f"input was: {input_text}")
             print("---------------------------------------------------------------------------")
