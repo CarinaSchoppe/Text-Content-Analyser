@@ -86,6 +86,9 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             first_entity = answer[0]
             relation = answer[1][1:]
             second_entity = answer[2][1:]
+            # check if "xxx" is in any answer (lowercased) string than continue
+            if "xxx" in first_entity.lower() or "xxx" in relation.lower() or "xxx" in second_entity.lower():
+                raise Exception("xxx in answer")
             valid_answers.append((first_entity, relation, second_entity))
         except Exception as exception:
             print("---------------------------------------------------------------------------")
@@ -145,9 +148,10 @@ def generate_response(input_text, prefix=None):
         completion = openai.ChatCompletion.create(
             model="gpt-4",  # 3.5-turbo
             messages=messages,
+            temperature=0.0
         )
 
-        result = completion.choices[0]["message"]["content"]  # result = completion.choices[0].message['content']
+        result = completion.choices[0]["message"]["content"]
         # TODO: nötig?
         # Das Ergebnis des letzten Prompts im dict_answers speichern
         # if index == len(prompts) - 1:
@@ -159,6 +163,7 @@ def generate_response(input_text, prefix=None):
         pass
     # make the current thread sleep for 4 seconds
     time.sleep(((60 / 20) * len(prompts)) + 1)
+
 
 def main():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
