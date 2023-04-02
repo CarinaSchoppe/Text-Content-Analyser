@@ -79,6 +79,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             continue
         try:
             # remove everything before the first "(" and after the last ")"
+            clean_answer = answer
             answer = answer[answer.find("("):]
             answer = re.sub(r"[\(\)]", "", answer)
             answer = answer.split(",")
@@ -92,8 +93,8 @@ def convert_chat_gpt_answer(input_text: str, output: str):
         except Exception as exception:
             print("---------------------------------------------------------------------------")
             print(exception)
-            print(f"because: answer from chat gpt was not in the right format, format: {output}")
-            print(f"exact mistake: {answer}")
+            print(f"because: answer from chat gpt was not in the right format, format:\n{output}")
+            print(f"exact mistake: {clean_answer}")
             print(f"input was: {input_text}")
             print("---------------------------------------------------------------------------")
     for answer in valid_answers:
