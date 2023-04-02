@@ -82,7 +82,6 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             clean_answer = answer
             # check if "xxx" is in any answer (lowercased) string than continue
             if "xxx" in clean_answer.lower():
-                print("XXX in answer!")
                 raise Exception("xxx in answer")
             answer = answer[answer.find("("):]
             answer = re.sub(r"[\(\)]", "", answer)
@@ -95,7 +94,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             valid_answers.append((first_entity, relation, second_entity))
         except Exception as exception:
             print("---------------------------------------------------------------------------")
-            print(exception)
+            print(f"exception-message: {exception}")
             print(f"because answer from chat-gpt was not in the right format, format:\n{output}\n")
             print(f"exact mistake: '{clean_answer}'")
             print(f"input was: '{input_text}'")
