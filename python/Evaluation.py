@@ -1,5 +1,6 @@
 import os
 import re
+import time
 import xml.etree.ElementTree as elementtree
 
 import openai
@@ -173,7 +174,7 @@ def generate_response(input_text):
     except Exception as _:
         pass
     # make the current thread sleep for 4 seconds
-    # TODO: time.sleep(((60 / 20) * len(prompts)) + 1)
+    time.sleep(((60 / 20) * len(prompts)) + 2)
 
 
 def main():
