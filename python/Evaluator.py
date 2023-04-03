@@ -31,7 +31,7 @@ def main():
 
         # I want to save the precision, recall and f1_score as a txt file
         with open(os.path.join(working_dir, "results.txt"), "w") as file:
-            file.write(f"Precision: {precision} \n Recall: {recall} \n F1-Score: {f1_score}")
+            file.write(f"Precision: {precision}\nRecall: {recall}\nF1-Score: {f1_score}")
         print(f"saved results")
 
         # inside the working_dir folder I want to save the grafics as a svg file
