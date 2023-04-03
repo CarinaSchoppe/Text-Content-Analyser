@@ -1,9 +1,10 @@
 import os
+import re
 import shutil
 
 from Evaluation import main as evaluation
 
-amount_counter = 15
+amount_counter = 4
 
 
 def main():
@@ -16,8 +17,8 @@ def main():
         shutil.rmtree(os.path.join(runs_path, folder))
     print("file deletion completed")
     for runs in range(amount_counter):
-        print("############################################################################################################")
         grafics, precision, recall, f1_score = evaluation()
+        print("############################################################################################################")
         print(f"Run {runs + 1} of {amount_counter}")
         print(f"Precision: {precision}")
         print(f"Recall: {recall}")
@@ -41,6 +42,44 @@ def main():
         print(f"saved grafics")
         print("############################################################################################################")
 
+    result_files = []
+    # go through all results.txt files in the runs folder
+    for folder in os.listdir(runs_path):
+        folder_path = os.path.join(runs_path, folder)
+        for file in os.listdir(folder_path):
+            if file == "results.txt":
+                # read in the contents of the results.txt file
+                with open(os.path.join(folder_path, file), "r") as f:
+                    content = f.read()
+                # extract the F1-Score as an integer using regular expressions
+                f1_score = re.search(r"F1-Score:\s+(\d+)", content).group(1)
+                # add the folder name and F1-Score to the result_files list
+                result_files.append((folder, int(f1_score)))
+    # Print the list of result files and their corresponding folder numbers
+    print(result_files)
+    best_score = 0
+    best_folder = ""
+
+    for folder, score in result_files:
+        if score > best_score:
+            best_score = score
+            best_folder = folder
+
+    print(f"The best F1 score ({best_score}) was found in folder {best_folder}")
+    best_folder_path = os.path.join(runs_path, best_folder)
+    best_path = os.path.join(runs_path, "best")
+
+    os.makedirs(best_path, exist_ok=True)
+
+    for item in os.listdir(best_folder_path):
+        item_path = os.path.join(best_folder_path, item)
+        if os.path.isfile(item_path):
+            shutil.copy2(item_path, best_path)
+        elif os.path.isdir(item_path):
+            shutil.copytree(item_path, os.path.join(best_path, item))
+
+
+print("Contents of the best run have been copied to the 'best' folder")
 
 if __name__ == '__main__':
     main()
