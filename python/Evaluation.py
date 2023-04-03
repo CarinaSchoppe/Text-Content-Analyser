@@ -214,5 +214,3 @@ def main():
     txt_eval.evaluate()
 
 
-if __name__ == "__main__":
-    main()
