@@ -173,8 +173,11 @@ def generate_response(input_text):
         convert_chat_gpt_answer(input_text=input_text, output=result)
     except Exception as _:
         pass
-    # make the current thread sleep for 4 seconds
-    time.sleep(((60 / 20) * len(prompts)) + 2)
+    formula = ((60 / 20) * len(prompts)) + 1
+    if debug and debug_full:
+        print("sleeping for", formula, "seconds")
+    # make the current thread sleep for formula seconds
+    time.sleep(formula)
 
 
 def main():
@@ -188,14 +191,26 @@ def main():
     if debug:
         print("text extraction done")
     try:
-        for file in os.listdir("../documents/results"):
-            os.remove(os.path.join("../documents/results", file))
+        # delete the ai_results and self_results files
+        ai_results_path = "../documents/results/ai_results.csv"
+        self_results_path = "../documents/results/self_results.csv"
+
+        # delete ai_results.csv file
+        if os.path.exists(ai_results_path):
+            os.remove(ai_results_path)
+            print("File deleted:", ai_results_path)
+
+        # delete self_results.csv file
+        if os.path.exists(self_results_path):
+            os.remove(self_results_path)
+            print("File deleted:", self_results_path)
     except Exception as _:
         pass
     if debug:
         print("file deletion done")
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
+
     if debug:
         print("file creation done")
     for text in texts:
@@ -209,6 +224,8 @@ def main():
     comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
     format_converter(dict_own_labels, "self_results")
     format_converter(dict_ai_answers, "ai_results")
+    if debug:
+        print("files saved")
     print("code completed")
 
     if debug:
