@@ -3,7 +3,7 @@ import shutil
 
 from Evaluation import main as evaluation
 
-amount_counter = 3
+amount_counter = 15
 
 
 def main():
@@ -14,6 +14,7 @@ def main():
     runs_path = os.path.join(results_path, "runs")
     for folder in os.listdir(runs_path):
         shutil.rmtree(os.path.join(runs_path, folder))
+    print("file deletion completed")
     for runs in range(amount_counter):
         grafics, precision, recall, f1_score = evaluation()
         print(f"Run {runs + 1} of {amount_counter}")

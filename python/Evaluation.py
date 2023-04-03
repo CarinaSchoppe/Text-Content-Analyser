@@ -6,10 +6,10 @@ import openai
 
 openai.api_key = "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"
 dict_entity = dict()
-dict_semantic = dict()
+dict_own_labels = dict()
 debug = True
 debug_full = True
-dict_answers = dict()
+dict_ai_answers = dict()
 
 
 def extract_values_from_file(file, path="../documents/xmi/"):
@@ -23,7 +23,7 @@ def extract_values_from_file(file, path="../documents/xmi/"):
     file_text = file_text.replace('&amp;', ' ')
 
     dict_entity[file_text] = dict()
-    dict_semantic[file_text] = dict()
+    dict_own_labels[file_text] = dict()
     # extraction of entities
     for child in root:
         if "NamedEntity" not in child.tag:
@@ -46,9 +46,9 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         relation = child.attrib["Relation"]
         id = child.attrib["{http://www.omg.org/XMI}id"]
         # governor relation dependent
-        dict_semantic[file_text][id] = (governor, relation, dependent)
+        dict_own_labels[file_text][id] = (governor, relation, dependent)
         if debug_full and debug:
-            print(f"text={file_text} id={id} result={dict_semantic[file_text][id]}")
+            print(f"text={file_text} id={id} result={dict_own_labels[file_text][id]}")
 
 
 def format_converter(semantic_dict, document):
@@ -105,13 +105,13 @@ def convert_chat_gpt_answer(input_text: str, output: str):
         print(f"invalid answers: {invalid_answers}")
     for answer in valid_answers:
         first_entity, relation, second_entity = answer
-        if input_text in dict_answers:
+        if input_text in dict_ai_answers:
             # get the len of elements in the dict_answers[input] and add 1 to it
-            dict_answers[input_text][len(dict_answers[input_text])] = (first_entity, relation, second_entity)
+            dict_ai_answers[input_text][len(dict_ai_answers[input_text])] = (first_entity, relation, second_entity)
         else:
             input_dict = dict()
             input_dict[0] = (first_entity, relation, second_entity)
-            dict_answers[input_text] = input_dict
+            dict_ai_answers[input_text] = input_dict
     if debug and valid_answers != []:
         print("worked", "input:", input_text, "answer:", valid_answers)
 
@@ -201,11 +201,13 @@ def main():
         generate_response(text)
     if debug:
         print("ai answers done")
-    print(dict_answers)
-    print(dict_semantic)
-    comparison_of_results(answers_dict=dict_answers, semantic_dict=dict_semantic)
-    format_converter(dict_semantic, "self_results")
-    format_converter(dict_answers, "ai_results")
+        print("----------------------------------------------------------------")
+        print("ai dict (gpt):", len(dict_ai_answers), dict_ai_answers)
+        print("semantic dict (own):", len(dict_own_labels), dict_own_labels)
+        print("----------------------------------------------------------------")
+    comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
+    format_converter(dict_own_labels, "self_results")
+    format_converter(dict_ai_answers, "ai_results")
     print("code completed")
 
     if debug:
