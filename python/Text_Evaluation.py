@@ -278,7 +278,7 @@ def evaluate():
         fig, ax = plt.subplots(figsize=(10, 8))
         ax = sns.heatmap(cm, cmap=custom_color_map, annot=True, xticklabels=classes, yticklabels=classes, cbar=False, fmt="d")
         ax.set(title=title, xlabel="predicted label", ylabel="true label")
-        fig.savefig('Result.svg')
+        # fig.savefig('Result.svg')
         return fig
 
     tp, fp, fn, rel = tp_fp_fn_rel('triplet', gold_cleaned, predictions_cleaned)  # TODO: hier change that!
@@ -327,6 +327,7 @@ def evaluate():
     new_list = [index_fp, fp_e, index_fn, fn_e]
     df = pd.DataFrame(new_list)
 
-    df.to_excel('errors.xlsx', sheet_name='errors_raw', index=False, engine='xlsxwriter')
+    # save as excel
+    # df.to_excel('errors.xlsx', sheet_name='errors_raw', index=False, engine='xlsxwriter')
 
     return grafics, precision, recall, f1_score
