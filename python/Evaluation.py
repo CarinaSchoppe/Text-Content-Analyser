@@ -1,6 +1,5 @@
 import os
 import re
-import time
 import xml.etree.ElementTree as elementtree
 
 import openai
@@ -74,6 +73,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
     # convert into different variables
     answers = output.split("\n")
     valid_answers = []
+    invalid_answers = []
     for index, answer in enumerate(answers):
         if answer == "" or answer == " " or answer == "\n" or answer is None:
             continue
@@ -93,12 +93,16 @@ def convert_chat_gpt_answer(input_text: str, output: str):
                 print(f"answer: {(first_entity, relation, second_entity)} added to valid answers")
             valid_answers.append((first_entity, relation, second_entity))
         except Exception as exception:
+            invalid_answers.append(clean_answer)
             print("---------------------------------------------------------------------------")
             print(f"exception-message: {exception}")
             print(f"because answer from chat-gpt was not in the right format, format:\n{output}\n")
             print(f"exact mistake: '{clean_answer}'")
             print(f"input was: '{input_text}'")
             print("---------------------------------------------------------------------------")
+    if debug:
+        print(f"valid answers: {valid_answers}")
+        print(f"invalid answers: {invalid_answers}")
     for answer in valid_answers:
         first_entity, relation, second_entity = answer
         if input_text in dict_answers:
@@ -134,37 +138,42 @@ def comparison_of_results(answers_dict, semantic_dict):
         print("key comparison is done")
 
 
-def generate_response(input_text, prefix=None):
+def generate_response(input_text):
     global result
-    messages = [{"role": "user", "content": input_text}]
 
     prompts = [
-        "Extract from this article the name of the startup, the amount of money invested, the names of the investors, the round of financing, the date the investment took place.\nFill in the following form:\nDate:\nStartup:\nInvestors:\nInvested amount:\nFinancing round:",
-        "If there is something not specified, write XXX",
-        "Please extract the relationship between two entities based on the given information, and represent it in the form of a triplet. The triplet should consist of a subject, a relationship, and an object. The subject represents the first entity, the relationship represents the connection between the two entities, and the object represents the second entity. Only use the relationships specified in the given examples and extract only the relevant triplets that pertain to the investment rounds in the startup scene."
-        "Compare your triplets with these examples and adapt them: 1. Example: Digital coaching platform CoachHub has secured new financing of approx. €25 million led by new investor Draper Esprit, alongside existing investors HV Capital, Partech, Speedinvest, signals Venture Capital and RTP Global. This latest round brings the total funds raised to over €40 million following the company’s +€16 million funding round in late 2019.\n(Coachhub, receives, €25 million)\n(Coachhub, receives, €16 million)\n(Coachhub, received in total, €40 million)\n(€16 million, was received in, 2019)\n(Draper Esprit, invests, €25 million)\n(HV Capital, invests, €25 million)\n(Partech, invests, €25 million)\n(Speedinvest, invests, €25 million)\n(signals Venture Capital, invests, €25 million)\n(RTP Global, invests, €25 million) \n\n 2. Example: The Munich-based startup Userlane just raised €4 million to finance its expansion and to further develop its product. Userlane, which was founded in 2015, offers a navigation system for software that allows users to understand and operate any application without formal training. The Series A investment round was led by Capnamic Ventures, and joined by High Tech Gründerfonds, main incubator, and FTR Ventures.(Userlane, receives, €4 million)\n(€4 million, roundofinvestment, Series A)\n(Capnamic Ventures, invests, €4 million)\n(High Tech Gründerfonds, invests, €4 million)\n(FTR Ventures, invests, €4 million) \n\n 3. Example: Igyxos has now raised €7.5 million in a Series A round led by Bpifrance through its Accelerate Biotechnologies Santé Fund, with participation from the Go Capital Amorçage II and Loire Valley Invest Funds managed by Go Capital and the Fonds Emergence Innovation II managed by Sofimac Innovation.\n(Igyxos, receives, €7.5 million)\n(€2.8 million, roundofinvestment, seed round)\n(Bpifrance, invests, €7.5 million)\n(Go Capital , invests, €7.5 million)\n(Sofimac Innovation, invests, €7.5 million) \n\n 4. Example: Today learning platform Masterplan.com has announced raising €13 million total funding, with existing investors only participating in the round. With the additional capital, Masterplan intends to further expand the development and distribution of its proprietary software.\n(Masterplan.com, receives, €13 million)\n(existing investors, invests, €13 million) \n\n 5. Example: Blacklane, the company that provides professional ground transportation at lowest rates around the globe, has added a mid-seven-digit round of funding at a valuation in the nine-figure Euro range from Japan-based Recruit Holdings Co., through its investment subsidiary RSP Fund No. 5, LLC \n(Blacklane, receives, mid-seven-digit)\n(Blacklane, valuation at, nine-figure Euro range)\n(Recruit Holdings Co., invests, mid-seven-digit) \n\n 6. Example: Goodlord, one of the UK's leading property technology startups, has today announced the successful close of a Series B funding round. Following on from its 2017 €7 million Series A round, the business has now secured a further €7 million of funding, with the latest round led by new investor Finch Capital, supported by existing investors, Rocket Internet and angel investors\n(Goodlord, receives, €7 million)\n(Goodlord, receives, €7 million)\n(€7 million, was received, today)\n(€7 million, was received, 2017)\n(€7 million, roundofinvestment, Series B)\n(€7 million, roundofinvestment, Series A)\n(Finch Capital, invests, €7 million)\n(Rocket Internet, invests, €7 million)\n(angel investors, invests, €7 million) \n\n 7. Example: The €1.86 million investment round consisted of a €1.15 million equity investment from Vendep Capital, a Northern European SaaS focused venture capital company, and a €751K loan from Business Finland\n(Trustmary, received total, €1.86 million)\n(€1.86 million, has investment part, €1.15 million)\n(€1.86 million, has investment part, €751k)\n(Vendep Capital, invests part, €1.15 million)\n(Business Finland, invests part, €751k)",
-        "Check your answers again with these general triplets and adapt them: \n(startup name, receives, amount of money)\n(amount of money, was received in, date)\n(amount of money, roundofinvestment, funding round)\n(startup name, received in total, amount of money)\n(amount of money, has investment part, amount of money)\n(investor name, invests part, amount of money)\n(investor name, invests, amount of money)\n(startup name, valuation at, amount of money)"
+        {"role": "system", "content": "Task description: You are a triplet extractor! Your goal is to extract information about startup investments from articles, including the name of the startup, the amount of money invested, the names of the investors, the round of financing, and the date the investment took place. Your output should be a set of triplets in the form (subject, relation, object). If there is something not specified, write XXX instead."},
+        {"role": "user", "content": "1. Example: Digital coaching platform CoachHub has secured new financing of approx. €25 million led by new investor Draper Esprit, alongside existing investors HV Capital, Partech, Speedinvest, signals Venture Capital and RTP Global. This latest round brings the total funds raised to over €40 million following the company’s +€16 million funding round in late 2019."},
+        {"role": "assistant", "content": "\n(Coachhub, receives, €25 million)\n(Coachhub, receives, €16 million)\n(Coachhub, received in total, €40 million)\n(€16 million, was received in, 2019)\n(Draper Esprit, invests, €25 million)\n(HV Capital, invests, €25 million)\n(Partech, invests, €25 million)\n(Speedinvest, invests, €25 million)\n(signals Venture Capital, invests, €25 million)\n(RTP Global, invests, €25 million)"},
+        {"role": "user", "content": "2. Example: The Munich-based startup Userlane just raised €4 million to finance its expansion and to further develop its product. Userlane, which was founded in 2015, offers a navigation system for software that allows users to understand and operate any application without formal training. The Series A investment round was led by Capnamic Ventures, and joined by High Tech Gründerfonds, main incubator, and FTR Ventures."},
+        {"role": "assistant", "content": "\n(Userlane, receives, €4 million)\n(€4 million, roundofinvestment, Series A)\n(Capnamic Ventures, invests, €4 million)\n(High Tech Gründerfonds, invests, €4 million)\n(FTR Ventures, invests, €4 million)"},
+        {"role": "user", "content": "3. Example: Igyxos has now raised €7.5 million in a Series A round led by Bpifrance through its Accelerate Biotechnologies Santé Fund, with participation from the Go Capital Amorçage II and Loire Valley Invest Funds managed by Go Capital and the Fonds Emergence Innovation II managed by Sofimac Innovation."},
+        {"role": "assistant", "content": "\n(Igyxos, receives, €7.5 million)\n(€2.8 million, roundofinvestment, seed round)\n(Bpifrance, invests, €7.5 million)\n(Go Capital , invests, €7.5 million)\n(Sofimac Innovation, invests, €7.5 million)"},
+        {"role": "user", "content": "4. Example: Today learning platform Masterplan.com has announced raising €13 million total funding, with existing investors only participating in the round. With the additional capital, Masterplan intends to further expand the development and distribution of its proprietary software."},
+        {"role": "assistant", "content": "\n(Masterplan.com, receives, €13 million)\n(existing investors, invests, €13 million)"},
+        {"role": "user", "content": "5. Example: Blacklane, the company that provides professional ground transportation at lowest rates around the globe, has added a mid-seven-digit round of funding at a valuation in the nine-figure Euro range from Japan-based Recruit Holdings Co., through its investment subsidiary RSP Fund No. 5, LLC."},
+        {"role": "assistant", "content": "\n(Blacklane, receives, mid-seven-digit)\n(Blacklane, valuation at, nine-figure Euro range)\n(Recruit Holdings Co., invests, mid-seven-digit)"},
+        {"role": "user", "content": "6. Example: Goodlord, one of the UK's leading property technology startups, has today announced the successful close of a Series B funding round. Following on from its 2017 €7 million Series A round, the business has now secured a further €7 million of funding, with the latest round led by new investor Finch Capital, supported by existing investors, Rocket Internet and angel investors."},
+        {"role": "assistant", "content": "\n(Goodlord, receives, €7 million)\n(Goodlord, receives, €7 million)\n(€7 million, was received, today)\n(€7 million, was received, 2017)\n(€7 million, roundofinvestment, Series B)\n(€7 million, roundofinvestment, Series A)\n(Finch Capital, invests, €7 million)\n(Rocket Internet, invests, €7 million)\n(angel investors, invests, €7 million)"},
+        {"role": "user", "content": "7. Example: The €1.86 million investment round consisted of a €1.15 million equity investment from Vendep Capital, a Northern European SaaS focused venture capital company, and a €751K loan from Business Finland."},
+        {"role": "assistant", "content": "\n(Trustmary, received total, €1.86 million)\n(€1.86 million, has investment part, €1.15 million)\n(€1.86 million, has investment part, €751k)\n(Vendep Capital, invests part, €1.15 million)\n(Business Finland, invests part, €751k)"},
+        {"role": "user", "content": f"Extract as shown and only with the relations as shown: the name of the startup, the amount of money invested, the names of the investors, the round of financing, and the date the investment took place. Your output should be a set of triplets in the form (subject, relation, object). If there is something not specified, write XXX instead. Article: {input_text}"},
     ]
+    completion = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo-0301",  # gpt-3.5-turbo-0301 oder gpt-4-0314 oder gpt-4
+        messages=prompts,
+        temperature=0,
 
-    for index, prompt in enumerate(prompts):
-        if index == 0 and prefix is not None:
-            prompt += prefix
+    )
 
-        messages.append({"role": "system", "content": prompt})
-        completion = openai.ChatCompletion.create(
-            model="gpt-4",  # 3.5-turbo
-            messages=messages,
-            temperature=0.0
-        )
-
-        result = completion.choices[0]["message"]["content"]
+    result = completion.choices[0]["message"]["content"]
 
     try:
         convert_chat_gpt_answer(input_text=input_text, output=result)
     except Exception as _:
         pass
     # make the current thread sleep for 4 seconds
-    time.sleep(((60 / 20) * len(prompts)) + 1)
+    # TODO: time.sleep(((60 / 20) * len(prompts)) + 1)
 
 
 def main():

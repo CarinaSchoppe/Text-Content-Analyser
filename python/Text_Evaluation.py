@@ -276,7 +276,7 @@ def evaluate():
         cm = np.array([[len(tp), len(fn)], [len(fp), tn]])
         classes = ['true triplets', 'false triplets']
 
-        fig, ax = plt.subplots(figsize=(10, 6))
+        fig, ax = plt.subplots(figsize=(10, 8))
         ax = sns.heatmap(cm, cmap=custom_color_map, annot=True, xticklabels=classes, yticklabels=classes, cbar=False, fmt="d")
         ax.set(title=title, xlabel="predicted label", ylabel="true label")
         fig.savefig('Result.svg')
