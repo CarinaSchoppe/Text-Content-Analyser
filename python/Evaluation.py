@@ -8,7 +8,7 @@ openai.api_key = "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"
 dict_entity = dict()
 dict_own_labels = dict()
 debug = True
-debug_full = True
+debug_full = False
 dict_ai_answers = dict()
 
 
@@ -58,7 +58,7 @@ def format_converter(semantic_dict, document):
             continue
         for id, triple in value.items():
             # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
-            if debug:
+            if debug and debug_full:
                 print(f"old: {triple[0]} {triple[1]} {triple[2]}")
                 print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
             results.append(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")

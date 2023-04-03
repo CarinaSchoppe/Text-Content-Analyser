@@ -16,6 +16,7 @@ def main():
         shutil.rmtree(os.path.join(runs_path, folder))
     print("file deletion completed")
     for runs in range(amount_counter):
+        print("############################################################################################################")
         grafics, precision, recall, f1_score = evaluation()
         print(f"Run {runs + 1} of {amount_counter}")
         print(f"Precision: {precision}")
@@ -38,6 +39,7 @@ def main():
         # inside the working_dir folder I want to save the grafics as a svg file
         grafics.savefig(os.path.join(working_dir, "grafics.svg"))
         print(f"saved grafics")
+        print("############################################################################################################")
 
 
 if __name__ == '__main__':
