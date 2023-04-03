@@ -160,7 +160,6 @@ def evaluate():
             f1score = round(2 * ((precision * recall) / (precision + recall)), 2)
         return precision, recall, f1score
 
-
     def tp_fp_fn_rel(approach, gold, pred):
         tp, fp, rel, fn = list(), list(), int(), list()
 
@@ -280,21 +279,26 @@ def evaluate():
         ax = sns.heatmap(cm, cmap=custom_color_map, annot=True, xticklabels=classes, yticklabels=classes, cbar=False, fmt="d")
         ax.set(title=title, xlabel="predicted label", ylabel="true label")
         fig.savefig('Result.svg')
+        return fig
 
     tp, fp, fn, rel = tp_fp_fn_rel('triplet', gold_cleaned, predictions_cleaned)  # TODO: hier change that!
 
     precision, recall, f1score = calculate_metrics(tp, fp, rel)
 
-    confusion_matrix(tp, fp, fn, title=None)
+    grafics = confusion_matrix(tp, fp, fn, title=None)
 
+    precision = round(precision, 2) if precision is not None else 'N/A'
+    recall = round(recall, 2) if recall is not None else 'N/A'
+    f1_score = f1score
+    print('\n-------------------------')
     print('METRICS')
-    print('-------------------------')
-    print('Precision: ', round(precision, 2) if precision is not None else 'N/A', '%' if precision is not None else '')
-    print('Recall: ', round(recall, 2) if recall is not None else 'N/A', '%' if recall is not None else '')
+    print('Precision: ', precision, '%' if precision is not None else '')
+    print('Recall: ', recall, '%' if recall is not None else '')
     if f1score is None:
         print('F1-Score: N/A')
     else:
         print(f'F1-Score: {f1score}%')
+    print('-------------------------\n')
 
     def error_analysis(approach, gold, pred):
         tp, fp, rel, fn, index_fp, index_fn = list(), list(), int(), list(), list(), list()
@@ -324,3 +328,5 @@ def evaluate():
     df = pd.DataFrame(new_list)
 
     df.to_excel('errors.xlsx', sheet_name='errors_raw', index=False, engine='xlsxwriter')
+
+    return grafics, precision, recall, f1_score

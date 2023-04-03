@@ -211,6 +211,4 @@ def main():
     if debug:
         print("Start of evaluation")
     import Text_Evaluation as txt_eval
-    txt_eval.evaluate()
-
-
+    return txt_eval.evaluate()
