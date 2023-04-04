@@ -275,7 +275,7 @@ def evaluate(single):
         recall_mean /= len(combined_dict)
         f1_score_mean /= len(combined_dict)
 
-        return txt_eval.confusion_matrix(heat_map_values=heat_map_values_combined), precision_mean, recall_mean, f1_score_mean
+        return txt_eval.confusion_matrix(heat_map_values=heat_map_values_combined)[0], precision_mean, recall_mean, f1_score_mean
 
     else:
         for text, value in dict_own_labels.items():

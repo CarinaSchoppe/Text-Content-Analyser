@@ -333,4 +333,5 @@ def evaluate():
     # save as excel
     # df.to_excel('errors.xlsx', sheet_name='errors_raw', index=False, engine='xlsxwriter')
 
+    print("heatmap values", heat_map_values)
     return grafics, heat_map_values, precision, recall, f1_score
