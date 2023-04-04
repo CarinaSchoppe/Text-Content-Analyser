@@ -7,16 +7,29 @@ import seaborn as sns
 from matplotlib.colors import LinearSegmentedColormap
 from tqdm import tqdm
 
+sns.set_theme()
+
+colors = ["#EBCCB7", "#C50F36"]
+custom_color_map = LinearSegmentedColormap.from_list(
+    name='custom_cmap',
+    colors=colors,
+)
+
+
+def confusion_matrix(tp=0, fp=0, fn=0, title=None, tn=0, heat_map_values=None):
+    sns.set(font_scale=2)
+    if heat_map_values is None:
+        heat_map_values = np.array([[len(tp), len(fn)], [len(fp), tn]])
+    classes = ['true triplets', 'false triplets']
+
+    fig, ax = plt.subplots(figsize=(10, 8))
+    ax = sns.heatmap(heat_map_values, cmap=custom_color_map, annot=True, xticklabels=classes, yticklabels=classes, cbar=False, fmt="d")
+    ax.set(title=title, xlabel="predicted label", ylabel="true label")
+    # fig.savefig('Result.svg')
+    return fig, heat_map_values
+
 
 def evaluate():
-    sns.set_theme()
-
-    colors = ["#EBCCB7", "#C50F36"]
-    custom_color_map = LinearSegmentedColormap.from_list(
-        name='custom_cmap',
-        colors=colors,
-    )
-
     labels_df = pd.read_csv('../documents/results/self_results.csv', sep='\t')
     # labels_df = pd.read_csv('../documents/test_texts_NOGROUP.csv', sep='\t')
     labels_df = labels_df.dropna()
@@ -269,23 +282,13 @@ def evaluate():
 
         return tp, fp, fn, rel
 
-    def confusion_matrix(tp, fp, fn, title, tn=0):
 
-        sns.set(font_scale=2)
-        cm = np.array([[len(tp), len(fn)], [len(fp), tn]])
-        classes = ['true triplets', 'false triplets']
-
-        fig, ax = plt.subplots(figsize=(10, 8))
-        ax = sns.heatmap(cm, cmap=custom_color_map, annot=True, xticklabels=classes, yticklabels=classes, cbar=False, fmt="d")
-        ax.set(title=title, xlabel="predicted label", ylabel="true label")
-        # fig.savefig('Result.svg')
-        return fig
 
     tp, fp, fn, rel = tp_fp_fn_rel('triplet', gold_cleaned, predictions_cleaned)  # TODO: hier change that!
 
     precision, recall, f1score = calculate_metrics(tp, fp, rel)
 
-    grafics = confusion_matrix(tp, fp, fn, title=None)
+    grafics, heat_map_values = confusion_matrix(tp, fp, fn, title=None)
 
     precision = round(precision, 2) if precision is not None else 'N/A'
     recall = round(recall, 2) if recall is not None else 'N/A'
@@ -330,4 +333,4 @@ def evaluate():
     # save as excel
     # df.to_excel('errors.xlsx', sheet_name='errors_raw', index=False, engine='xlsxwriter')
 
-    return grafics, precision, recall, f1_score
+    return grafics, heat_map_values, precision, recall, f1_score

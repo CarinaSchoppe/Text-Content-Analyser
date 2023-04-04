@@ -3,6 +3,7 @@ import re
 import time
 import xml.etree.ElementTree as elementtree
 
+import numpy as np
 import openai
 
 import Text_Evaluation as txt_eval
@@ -245,6 +246,7 @@ def evaluate(single):
         precision_mean = 0
         recall_mean = 0
         f1_score_mean = 0
+        heat_map_values_combined = np.array([[0, 0], [0, 0]])
         for index, (text, value) in enumerate(combined_dict.items()):
             # text -> text
             # value -> (own_labels, ai_answers)
@@ -259,21 +261,21 @@ def evaluate(single):
             if debug:
                 print("Start of single evaluation")
 
-            grafics, precision, recall, f1_score = txt_eval.evaluate()
+            grafics, heat_map_values, precision, recall, f1_score = txt_eval.evaluate()
+            heat_map_values_combined += heat_map_values
             precision_mean += precision
             recall_mean += recall
             f1_score_mean += f1_score
             if debug:
                 print("evaluation done")
-            time.sleep(20)
             file_deleter()
             from Evaluator import file_saver as eval_file_saver
             eval_file_saver(index, grafics, precision, recall, f1_score)
-            time.sleep(20)
         precision_mean /= len(combined_dict)
         recall_mean /= len(combined_dict)
         f1_score_mean /= len(combined_dict)
-        return grafics, precision_mean, recall_mean, f1_score_mean
+
+        return txt_eval.confusion_matrix(heat_map_values=heat_map_values_combined), precision_mean, recall_mean, f1_score_mean
 
     else:
         for text, value in dict_own_labels.items():
@@ -286,4 +288,5 @@ def evaluate(single):
 
         if debug:
             print("Start of evaluation")
-        return txt_eval.evaluate()
+        grafics, heat_map_values, precision, recall, f1_score = txt_eval.evaluate()
+        return grafics, precision, recall, f1_score

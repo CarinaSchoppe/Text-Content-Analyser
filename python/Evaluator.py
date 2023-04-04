@@ -95,6 +95,7 @@ def evaluator():
             file_evaluator()
         else:
             file_saver(-1, grafics, precision, recall, f1_score)
+            return
 
 
 if __name__ == '__main__':
