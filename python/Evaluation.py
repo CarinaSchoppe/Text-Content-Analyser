@@ -13,6 +13,7 @@ openai.api_key = "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"
 info = True  # default True!
 debug = False  # default False!
 clocked_timer = True  # default True!
+model = "gpt-3.5-turbo-0301"
 
 dict_ai_answers = dict()
 dict_entity = dict()
@@ -152,7 +153,7 @@ def generate_response(input_text):
         {"role": "user", "content": f"Extract as shown and only with the relations as shown: the name of the startup, the amount of money invested, the names of the investors, the round of financing, and the date the investment took place. Your output should be a set of triplets in the form (subject, relation, object). If there is something not specified, write XXX instead. Article: {input_text}"},
     ]
     completion = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo-0301",  # gpt-3.5-turbo-0301 oder gpt-4-0314 oder gpt-4
+        model=model,  # gpt-3.5-turbo-0301 oder gpt-4-0314 oder gpt-4
         messages=prompts,
         temperature=0,
     )
