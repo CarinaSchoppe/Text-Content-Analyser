@@ -87,7 +87,8 @@ def evaluator():
     print("file deletion completed")
     for runs in range(amount_counter):
         grafics, precision, recall, f1_score = evaluation(single_evaluation)
-        file_saver(runs, grafics, precision, recall, f1_score)
+        if not single_evaluation:
+            file_saver(runs, grafics, precision, recall, f1_score)
 
     file_evaluator()
 

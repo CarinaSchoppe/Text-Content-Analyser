@@ -256,7 +256,6 @@ def evaluate(single):
             if debug:
                 print("files saved")
             print("code completed")
-
             if debug:
                 print("Start of single evaluation")
 
