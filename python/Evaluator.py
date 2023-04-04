@@ -92,8 +92,9 @@ def evaluator():
         grafics, precision, recall, f1_score = evaluation(single_evaluation)
         if not single_evaluation:
             file_saver(runs, grafics, precision, recall, f1_score)
-
-    file_evaluator()
+            file_evaluator()
+        else:
+            file_saver(-1, grafics, precision, recall, f1_score)
 
 
 if __name__ == '__main__':
