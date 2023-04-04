@@ -11,7 +11,7 @@ openai.api_key = "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"
 dict_entity = dict()
 dict_own_labels = dict()
 debug = True
-debug_full = False
+debug_full = True
 
 dict_ai_answers = dict()
 clocked_timer = False
@@ -237,9 +237,11 @@ def evaluate(single):
         comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
 
     if single:
-
+        print("single evaluation started")
         combined_dict = {key: (dict_own_labels.get(key), dict_ai_answers.get(key)) for key in set(dict_own_labels) | set(dict_ai_answers)}
 
+        if debug and debug_full:
+            print("combined dict:", combined_dict)
         precision_mean = 0
         recall_mean = 0
         f1_score_mean = 0
@@ -249,13 +251,14 @@ def evaluate(single):
             own_label, ai_label = value
             format_converter(own_label, "self_results")
             format_converter(ai_label, "ai_results")
-
+            if debug and debug_full:
+                print(f"file {index + 1} saved")
             if debug:
                 print("files saved")
             print("code completed")
 
             if debug:
-                print("Start of evaluation")
+                print("Start of single evaluation")
 
             grafics, precision, recall, f1_score = txt_eval.evaluate()
             precision_mean += precision
@@ -263,13 +266,16 @@ def evaluate(single):
             f1_score_mean += f1_score
             if debug:
                 print("evaluation done")
+            time.sleep(20)
+            file_deleter()
+            from Evaluator import file_saver as eval_file_saver
+            eval_file_saver(index, grafics, precision_mean, recall_mean, f1_score_mean)
+            time.sleep(20)
         precision_mean /= len(combined_dict)
         recall_mean /= len(combined_dict)
         f1_score_mean /= len(combined_dict)
-
-        file_deleter()
-
         return grafics, precision_mean, recall_mean, f1_score_mean
+
     else:
         for text, value in dict_own_labels.items():
             format_converter(value, "self_results")

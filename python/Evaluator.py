@@ -8,41 +8,40 @@ amount_counter = 1
 
 single_evaluation = True
 
-def main():
-    results_path = os.path.join(os.getcwd(), "..", "documents", "results")
-    # create the test folder inside the results folder
-    os.makedirs(os.path.join(results_path, "runs"), exist_ok=True)
 
-    runs_path = os.path.join(results_path, "runs")
-    for folder in os.listdir(runs_path):
-        shutil.rmtree(os.path.join(runs_path, folder))
-    print("file deletion completed")
-    for runs in range(amount_counter):
-        grafics, precision, recall, f1_score = evaluation(single_evaluation)
-        print("############################################################################################################")
-        print(f"Run {runs + 1} of {amount_counter}")
-        print(f"Precision: {precision}")
-        print(f"Recall: {recall}")
-        print(f"F1-Score: {f1_score}")
-        # create a directory one level above in the directory documents in the directory results with the name runs
-        # if the directory already exists, the program will not create a new one
-        # set the path to the results folder
-        os.makedirs(os.path.join(runs_path, str(runs + 1)), exist_ok=True)
-        print(f"made directory")
-        working_dir = os.path.join(runs_path, str(runs + 1))
-        # inside that runs directory make a new directory with the current runs number as the name
-        # inside that number directory save the grafics as a svg file
+def file_saver(runs, grafics, precision, recall, f1_score):
+    print("############################################################################################################")
+    print(f"Run {runs + 1} of {amount_counter}")
+    print(f"Precision: {precision}")
+    print(f"Recall: {recall}")
+    print(f"F1-Score: {f1_score}")
+    # create a directory one level above in the directory documents in the directory results with the name runs
+    # if the directory already exists, the program will not create a new one
+    # set the path to the results folder
+    os.makedirs(os.path.join(runs_path, str(runs + 1)), exist_ok=True)
+    print(f"made directory")
+    working_dir = os.path.join(runs_path, str(runs + 1))
+    # inside that runs directory make a new directory with the current runs number as the name
+    # inside that number directory save the grafics as a svg file
 
-        # I want to save the precision, recall and f1_score as a txt file
-        with open(os.path.join(working_dir, "results.txt"), "w") as file:
-            file.write(f"Precision: {precision}\nRecall: {recall}\nF1-Score: {f1_score}")
-        print(f"saved results")
+    # I want to save the precision, recall and f1_score as a txt file
+    with open(os.path.join(working_dir, "results.txt"), "w") as file:
+        file.write(f"Precision: {precision}\nRecall: {recall}\nF1-Score: {f1_score}")
+    print(f"saved results")
 
-        # inside the working_dir folder I want to save the grafics as a svg file
-        grafics.savefig(os.path.join(working_dir, "grafics.svg"))
-        print(f"saved grafics")
-        print("############################################################################################################")
+    # inside the working_dir folder I want to save the grafics as a svg file
+    grafics.savefig(os.path.join(working_dir, "grafics.svg"))
+    print(f"saved grafics")
+    print("############################################################################################################")
 
+
+results_path = os.path.join(os.getcwd(), "..", "documents", "results")
+# create the test folder inside the results folder
+os.makedirs(os.path.join(results_path, "runs"), exist_ok=True)
+runs_path = os.path.join(results_path, "runs")
+
+
+def file_evaluator():
     result_files = []
     # go through all results.txt files in the runs folder
     for folder in os.listdir(runs_path):
@@ -79,8 +78,19 @@ def main():
         elif os.path.isdir(item_path):
             shutil.copytree(item_path, os.path.join(best_path, item))
 
+    print("Contents of the best run have been copied to the 'best' folder")
 
-print("Contents of the best run have been copied to the 'best' folder")
+
+def evaluator():
+    for folder in os.listdir(runs_path):
+        shutil.rmtree(os.path.join(runs_path, folder))
+    print("file deletion completed")
+    for runs in range(amount_counter):
+        grafics, precision, recall, f1_score = evaluation(single_evaluation)
+        file_saver(runs, grafics, precision, recall, f1_score)
+
+    file_evaluator()
+
 
 if __name__ == '__main__':
-    main()
+    evaluator()
