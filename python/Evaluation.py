@@ -5,11 +5,14 @@ import xml.etree.ElementTree as elementtree
 
 import openai
 
+import Text_Evaluation as txt_eval
+
 openai.api_key = "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"
 dict_entity = dict()
 dict_own_labels = dict()
 debug = True
 debug_full = False
+
 dict_ai_answers = dict()
 clocked_timer = False
 comparator = True
@@ -54,20 +57,20 @@ def extract_values_from_file(file, path="../documents/xmi/"):
             print(f"text={file_text} id={id} result={dict_own_labels[file_text][id]}")
 
 
-def format_converter(semantic_dict, document):
-    for text, value in semantic_dict.items():
-        results = []
-        if type(value) is not dict:
-            continue
-        for id, triple in value.items():
-            # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
-            if debug and debug_full:
-                print(f"old: {triple[0]} {triple[1]} {triple[2]}")
-                print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
-            results.append(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
-        # reperate all results in result in one string seperated by "  "
-        final_string = "  ".join(results)
-        file_saver(final_string, document)
+def format_converter(value, document):
+    results = []
+    if type(value) is not dict:
+        return
+    for id, triple in value.items():
+        # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
+        if debug and debug_full:
+            print(f"old: {triple[0]} {triple[1]} {triple[2]}")
+            print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
+        results.append(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
+    # reperate all results in result in one string seperated by "  "
+    final_string = "  ".join(results)
+    file_saver(final_string, document)
+
     print("file conversion for file {} done".format(document))
 
 
@@ -108,6 +111,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
         print(f"invalid answers: {invalid_answers}")
     for answer in valid_answers:
         first_entity, relation, second_entity = answer
+
         if input_text in dict_ai_answers:
             # get the len of elements in the dict_answers[input] and add 1 to it
             dict_ai_answers[input_text][len(dict_ai_answers[input_text])] = (first_entity, relation, second_entity)
@@ -115,6 +119,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             input_dict = dict()
             input_dict[0] = (first_entity, relation, second_entity)
             dict_ai_answers[input_text] = input_dict
+
     if debug and valid_answers != []:
         print("worked", "input:", input_text, "answer:", valid_answers)
 
@@ -142,7 +147,6 @@ def comparison_of_results(answers_dict, semantic_dict):
 
 
 def generate_response(input_text):
-
     prompts = [
         {"role": "system", "content": "Task description: You are a triplet extractor! Your goal is to extract information about startup investments from articles, including the name of the startup, the amount of money invested, the names of the investors, the round of financing, and the date the investment took place. Your output should be a set of triplets in the form (subject, relation, object). If there is something not specified, write XXX instead."},
         {"role": "user", "content": "1. Example: Digital coaching platform CoachHub has secured new financing of approx. €25 million led by new investor Draper Esprit, alongside existing investors HV Capital, Partech, Speedinvest, signals Venture Capital and RTP Global. This latest round brings the total funds raised to over €40 million following the company’s +€16 million funding round in late 2019."},
@@ -181,16 +185,7 @@ def generate_response(input_text):
         time.sleep(formula)
 
 
-def main():
-    files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
-    for filename in files:
-        extract_values_from_file(filename)
-    if debug:
-        print("extraction and conversion done")
-
-    texts = {text for text in dict_entity.keys()}
-    if debug:
-        print("text extraction done")
+def file_deleter():
     try:
         # delete the ai_results and self_results files
         ai_results_path = "../documents/results/ai_results.csv"
@@ -212,6 +207,22 @@ def main():
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
 
+
+def evaluate(single):
+    global single_evaluation
+    single_evaluation = single
+    files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
+    for filename in files:
+        extract_values_from_file(filename)
+    if debug:
+        print("extraction and conversion done")
+
+    texts = {text for text in dict_entity.keys()}
+    if debug:
+        print("text extraction done")
+
+    file_deleter()
+
     if debug:
         print("file creation done")
     for text in texts:
@@ -224,13 +235,50 @@ def main():
         print("----------------------------------------------------------------")
     if comparator:
         comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
-    format_converter(dict_own_labels, "self_results")
-    format_converter(dict_ai_answers, "ai_results")
-    if debug:
-        print("files saved")
-    print("code completed")
 
-    if debug:
-        print("Start of evaluation")
-    import Text_Evaluation as txt_eval
-    return txt_eval.evaluate()
+    if single:
+
+        combined_dict = {key: (dict_own_labels.get(key), dict_ai_answers.get(key)) for key in set(dict_own_labels) | set(dict_ai_answers)}
+
+        precision_mean = 0
+        recall_mean = 0
+        f1_score_mean = 0
+        for index, (text, value) in enumerate(combined_dict.items()):
+            # text -> text
+            # value -> (own_labels, ai_answers)
+            own_label, ai_label = value
+            format_converter(own_label, "self_results")
+            format_converter(ai_label, "ai_results")
+
+            if debug:
+                print("files saved")
+            print("code completed")
+
+            if debug:
+                print("Start of evaluation")
+
+            grafics, precision, recall, f1_score = txt_eval.evaluate()
+            precision_mean += precision
+            recall_mean += recall
+            f1_score_mean += f1_score
+            if debug:
+                print("evaluation done")
+        precision_mean /= len(combined_dict)
+        recall_mean /= len(combined_dict)
+        f1_score_mean /= len(combined_dict)
+
+        file_deleter()
+
+        return grafics, precision_mean, recall_mean, f1_score_mean
+    else:
+        for text, value in dict_own_labels.items():
+            format_converter(value, "self_results")
+        for text, value in dict_ai_answers.items():
+            format_converter(value, "ai_results")
+        if debug:
+            print("files saved")
+        print("code completed")
+
+        if debug:
+            print("Start of evaluation")
+        return txt_eval.evaluate()
