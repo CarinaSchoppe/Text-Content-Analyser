@@ -11,8 +11,8 @@ import Text_Evaluation as txt_eval
 openai.api_key = "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"
 
 info = True  # default True!
-debug = True  # default False!
-clocked_timer = False  # default True!
+debug = False  # default False!
+clocked_timer = True  # default True!
 
 dict_ai_answers = dict()
 dict_entity = dict()
