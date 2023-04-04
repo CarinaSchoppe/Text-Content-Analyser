@@ -6,7 +6,7 @@
         <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
             <cc:Work>
                 <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                <dc:date>2023-04-04T16:20:37.833631</dc:date>
+                <dc:date>2023-04-04T16:36:24.039693</dc:date>
                 <dc:format>image/svg+xml</dc:format>
                 <dc:creator>
                     <cc:Agent>
@@ -42,7 +42,7 @@ z
                     <g id="line2d_1">
                         <path d="M 229.5 512.64
 L 229.5 69.12 
-" clip-path="url(#p1fcfc275a8)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
+" clip-path="url(#p12cd4006e9)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
                     </g>
                     <g id="text_1">
                         <!-- true triplets -->
@@ -240,7 +240,7 @@ z
                     <g id="line2d_2">
                         <path d="M 508.5 512.64
 L 508.5 69.12 
-" clip-path="url(#p1fcfc275a8)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
+" clip-path="url(#p12cd4006e9)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
                     </g>
                     <g id="text_2">
                         <!-- false triplets -->
@@ -431,7 +431,7 @@ z
                     <g id="line2d_3">
                         <path d="M 90 180
 L 648 180 
-" clip-path="url(#p1fcfc275a8)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
+" clip-path="url(#p12cd4006e9)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
                     </g>
                     <g id="text_4">
                         <!-- true triplets -->
@@ -456,7 +456,7 @@ L 648 180
                     <g id="line2d_4">
                         <path d="M 90 401.76
 L 648 401.76 
-" clip-path="url(#p1fcfc275a8)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
+" clip-path="url(#p12cd4006e9)" style="fill: none; stroke: #ffffff; stroke-linecap: round"/>
                     </g>
                     <g id="text_5">
                         <!-- false triplets -->
@@ -500,25 +500,25 @@ L 369 69.12
 L 369 290.88 
 L 90 290.88 
 L 90 69.12 
-" clip-path="url(#p1fcfc275a8)" style="fill: #ebccb7"/>
+" clip-path="url(#p12cd4006e9)" style="fill: #ebccb7"/>
                 <path d="M 369 69.12
 L 648 69.12 
 L 648 290.88 
 L 369 290.88 
 L 369 69.12 
-" clip-path="url(#p1fcfc275a8)" style="fill: #ebccb7"/>
+" clip-path="url(#p12cd4006e9)" style="fill: #ebccb7"/>
                 <path d="M 90 290.88
 L 369 290.88 
 L 369 512.64 
 L 90 512.64 
 L 90 290.88 
-" clip-path="url(#p1fcfc275a8)" style="fill: #ebccb7"/>
+" clip-path="url(#p12cd4006e9)" style="fill: #ebccb7"/>
                 <path d="M 369 290.88
 L 648 290.88 
 L 648 512.64 
 L 369 512.64 
 L 369 290.88 
-" clip-path="url(#p1fcfc275a8)" style="fill: #ebccb7"/>
+" clip-path="url(#p12cd4006e9)" style="fill: #ebccb7"/>
             </g>
             <g id="text_7">
                 <!-- 0 -->
@@ -574,7 +574,7 @@ z
         </g>
     </g>
     <defs>
-        <clipPath id="p1fcfc275a8">
+        <clipPath id="p12cd4006e9">
             <rect x="90" y="69.12" width="558" height="443.52"/>
         </clipPath>
     </defs>

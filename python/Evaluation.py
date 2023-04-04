@@ -12,7 +12,7 @@ openai.api_key = "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"
 
 info = True  # default True!
 debug = False  # default False!
-clocked_timer = True  # default True!
+clocked_timer = False  # default True!
 model = "gpt-3.5-turbo-0301"
 
 dict_ai_answers = dict()
@@ -233,7 +233,7 @@ def evaluate():
         # value -> (own_labels, ai_answers)
         own_label, ai_label = value
         format_converter(own_label, "self_results")
-        # format_converter(ai_label, "ai_results")
+        format_converter(ai_label, "ai_results")
         if info and debug:
             print(f"file {index + 1} saved")
         if info:
