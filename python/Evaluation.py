@@ -9,14 +9,15 @@ import openai
 import Text_Evaluation as txt_eval
 
 openai.api_key = "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"
-dict_entity = dict()
-dict_own_labels = dict()
+
 debug = True
-debug_full = True
+debug_full = False
+clocked_timer = True
+comparator = True
 
 dict_ai_answers = dict()
-clocked_timer = False
-comparator = True
+dict_entity = dict()
+dict_own_labels = dict()
 
 
 def extract_values_from_file(file, path="../documents/xmi/"):
