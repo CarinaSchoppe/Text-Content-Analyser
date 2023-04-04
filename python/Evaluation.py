@@ -10,10 +10,9 @@ import Text_Evaluation as txt_eval
 
 openai.api_key = "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"
 
-debug = True  # default True!
-debug_full = True  # default False!
+info = True  # default True!
+debug = True  # default False!
 clocked_timer = False  # default True!
-comparator = False  # default True!
 
 dict_ai_answers = dict()
 dict_entity = dict()
@@ -43,7 +42,7 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         text = file_text[begin:end]
         dict_entity[file_text][id] = text
 
-        if debug_full and debug:
+        if debug and info:
             print(f"text={file_text} id={id} result={dict_entity[file_text][id]}")
 
     for child in root:
@@ -55,7 +54,7 @@ def extract_values_from_file(file, path="../documents/xmi/"):
         id = child.attrib["{http://www.omg.org/XMI}id"]
         # governor relation dependent
         dict_own_labels[file_text][id] = (governor, relation, dependent)
-        if debug_full and debug:
+        if debug and info:
             print(f"text={file_text} id={id} result={dict_own_labels[file_text][id]}")
 
 
@@ -65,7 +64,7 @@ def format_converter(value, document):
         return
     for id, triple in value.items():
         # old format: governor relation dependent new format: <triplet> governor <sub> dependent <obj> relation
-        if debug and debug_full:
+        if info and debug:
             print(f"old: {triple[0]} {triple[1]} {triple[2]}")
             print(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
         results.append(f"<triplet> {triple[0]} <sub> {triple[2]} <obj> {triple[1]}")
@@ -97,7 +96,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             first_entity = answer[0]
             relation = answer[1][1:]
             second_entity = answer[2][1:]
-            if debug and debug_full:
+            if info and debug:
                 print(f"answer: {(first_entity, relation, second_entity)} added to valid answers")
             valid_answers.append((first_entity, relation, second_entity))
         except Exception as exception:
@@ -108,7 +107,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             print(f"exact mistake: '{clean_answer}'")
             print(f"input was: '{input_text}'")
             print("---------------------------------------------------------------------------")
-    if debug:
+    if info:
         print(f"valid answers: {valid_answers}")
         print(f"invalid answers: {invalid_answers}")
     for answer in valid_answers:
@@ -122,7 +121,7 @@ def convert_chat_gpt_answer(input_text: str, output: str):
             input_dict[0] = (first_entity, relation, second_entity)
             dict_ai_answers[input_text] = input_dict
 
-    if debug and valid_answers != []:
+    if info and valid_answers != []:
         print("worked", "input:", input_text, "answer:", valid_answers)
 
 
@@ -131,21 +130,6 @@ def file_saver(text, document):
         return
     with open(f"../documents/results/{document}.csv", "a", encoding="UTF-8") as file:
         file.write(text + "\n")
-
-
-def comparator_of_results(answers_dict, semantic_dict):
-    # create a list of keys to remove from the semantic_dict
-    keys_to_remove = []
-    for key_text in semantic_dict.keys():
-        if key_text not in answers_dict:
-            keys_to_remove.append(key_text)
-    # remove the keys from the semantic_dict
-    for key in keys_to_remove:
-        if debug and debug_full:
-            print(f"key {key} is removed from semantic_dict")
-        del semantic_dict[key]
-    if debug:
-        print("key comparison is done")
 
 
 def generate_response(input_text):
@@ -180,7 +164,7 @@ def generate_response(input_text):
     except Exception as _:
         pass
     formula = ((60 / 20) * len(prompts)) + 1
-    if debug and debug_full and clocked_timer:
+    if info and debug and clocked_timer:
         print("sleeping for", formula, "seconds")
     # make the current thread sleep for formula seconds
     if clocked_timer:
@@ -204,7 +188,7 @@ def file_deleter():
             print("File deleted:", self_results_path)
     except Exception as _:
         pass
-    if debug:
+    if info:
         print("file deletion done")
     file_saver("triplets", "ai_results")
     file_saver("triplets", "self_results")
@@ -214,63 +198,65 @@ def evaluate():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
     for filename in files:
         extract_values_from_file(filename)
-    if debug:
+    if info:
         print("extraction and conversion done")
 
     texts = {text for text in dict_entity.keys()}
-    if debug:
+    if info:
         print("text extraction done")
 
     file_deleter()
 
-    if debug:
+    if info:
         print("file creation done")
     for text in texts:
         generate_response(text)
-    if debug:
+    if info:
         print("ai answers done")
         print("----------------------------------------------------------------")
         print("ai dict (gpt):", len(dict_ai_answers), dict_ai_answers)
         print("semantic dict (own):", len(dict_own_labels), dict_own_labels)
         print("----------------------------------------------------------------")
-    if comparator:
-        comparator_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
 
-        print("single evaluation started")
-        combined_dict = {key: (dict_own_labels.get(key), dict_ai_answers.get(key)) for key in set(dict_own_labels) | set(dict_ai_answers)}
+    print("single evaluation started")
+    combined_dict = {key: (dict_own_labels.get(key), dict_ai_answers.get(key)) for key in set(dict_own_labels) | set(dict_ai_answers)}
 
-        if debug and debug_full:
-            print("combined dict:", combined_dict)
-        precision_mean = 0
-        recall_mean = 0
-        f1_score_mean = 0
-        heat_map_values_combined = np.array([[0, 0], [0, 0]])
-        for index, (text, value) in enumerate(combined_dict.items()):
-            # text -> text
-            # value -> (own_labels, ai_answers)
-            own_label, ai_label = value
-            format_converter(own_label, "self_results")
-            #format_converter(ai_label, "ai_results")
-            if debug and debug_full:
-                print(f"file {index + 1} saved")
-            if debug:
-                print("files saved")
-            print("code completed")
-            if debug:
-                print("Start of single evaluation")
+    if info and debug:
+        print("combined dict:", combined_dict)
+    precision_mean = 0
+    recall_mean = 0
+    f1_score_mean = 0
+    heat_map_values_combined = np.array([[0, 0], [0, 0]])
+    for index, (text, value) in enumerate(combined_dict.items()):
+        # text -> text
+        # value -> (own_labels, ai_answers)
+        own_label, ai_label = value
+        format_converter(own_label, "self_results")
+        # format_converter(ai_label, "ai_results")
+        if info and debug:
+            print(f"file {index + 1} saved")
+        if info:
+            print("files saved")
+        print("code completed")
+        if info:
+            print("Start of single evaluation")
 
-            grafics, heat_map_values, precision, recall, f1_score = txt_eval.evaluate()
-            heat_map_values_combined += heat_map_values
+        grafics, heat_map_values, precision, recall, f1_score = txt_eval.evaluate()
+        heat_map_values_combined += heat_map_values
+        try:
             precision_mean += precision
             recall_mean += recall
             f1_score_mean += f1_score
-            if debug:
-                print("evaluation done")
-            file_deleter()
-            from Evaluator import file_saver as eval_file_saver
-            eval_file_saver(index, grafics, precision, recall, f1_score)
-        precision_mean /= len(combined_dict)
-        recall_mean /= len(combined_dict)
-        f1_score_mean /= len(combined_dict)
+        except TypeError:
+            if info:
+                print("precision, recall, f1_score are None cause OPENAI gave no answer")
+        if info:
+            print("evaluation done")
+        file_deleter()
+        from Evaluator import file_saver as eval_file_saver
+        eval_file_saver(index, grafics, precision, recall, f1_score)
+    precision_mean /= len(combined_dict)
+    recall_mean /= len(combined_dict)
+    f1_score_mean /= len(combined_dict)
 
-        return txt_eval.confusion_matrix(heat_map_values=heat_map_values_combined)[0], precision_mean, recall_mean, f1_score_mean
+    return txt_eval.confusion_matrix(heat_map_values=heat_map_values_combined)[0], precision_mean, recall_mean, f1_score_mean
