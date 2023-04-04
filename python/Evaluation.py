@@ -10,10 +10,10 @@ import Text_Evaluation as txt_eval
 
 openai.api_key = "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"
 
-debug = True
-debug_full = False
-clocked_timer = True
-comparator = True
+debug = True  # default True!
+debug_full = True  # default False!
+clocked_timer = False  # default True!
+comparator = False  # default True!
 
 dict_ai_answers = dict()
 dict_entity = dict()
@@ -133,7 +133,7 @@ def file_saver(text, document):
         file.write(text + "\n")
 
 
-def comparison_of_results(answers_dict, semantic_dict):
+def comparator_of_results(answers_dict, semantic_dict):
     # create a list of keys to remove from the semantic_dict
     keys_to_remove = []
     for key_text in semantic_dict.keys():
@@ -210,9 +210,7 @@ def file_deleter():
     file_saver("triplets", "self_results")
 
 
-def evaluate(single):
-    global single_evaluation
-    single_evaluation = single
+def evaluate():
     files = [filename for filename in os.listdir("../documents/xmi") if filename.endswith(".xmi")]
     for filename in files:
         extract_values_from_file(filename)
@@ -236,9 +234,8 @@ def evaluate(single):
         print("semantic dict (own):", len(dict_own_labels), dict_own_labels)
         print("----------------------------------------------------------------")
     if comparator:
-        comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
+        comparator_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
 
-    if single:
         print("single evaluation started")
         combined_dict = {key: (dict_own_labels.get(key), dict_ai_answers.get(key)) for key in set(dict_own_labels) | set(dict_ai_answers)}
 
@@ -253,7 +250,7 @@ def evaluate(single):
             # value -> (own_labels, ai_answers)
             own_label, ai_label = value
             format_converter(own_label, "self_results")
-            format_converter(ai_label, "ai_results")
+            #format_converter(ai_label, "ai_results")
             if debug and debug_full:
                 print(f"file {index + 1} saved")
             if debug:
@@ -277,17 +274,3 @@ def evaluate(single):
         f1_score_mean /= len(combined_dict)
 
         return txt_eval.confusion_matrix(heat_map_values=heat_map_values_combined)[0], precision_mean, recall_mean, f1_score_mean
-
-    else:
-        for text, value in dict_own_labels.items():
-            format_converter(value, "self_results")
-        for text, value in dict_ai_answers.items():
-            format_converter(value, "ai_results")
-        if debug:
-            print("files saved")
-        print("code completed")
-
-        if debug:
-            print("Start of evaluation")
-        grafics, heat_map_values, precision, recall, f1_score = txt_eval.evaluate()
-        return grafics, precision, recall, f1_score

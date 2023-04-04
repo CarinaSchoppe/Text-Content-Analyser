@@ -4,17 +4,10 @@ import shutil
 
 from Evaluation import evaluate as evaluation
 
-amount_counter = 1
-
-single_evaluation = True
-
 
 def file_saver(runs, grafics, precision, recall, f1_score):
     print("############################################################################################################")
-    if single_evaluation:
-        print(f"Run {runs + 1} of n")
-    else:
-        print(f"Run {runs + 1} of {amount_counter}")
+    print(f"Run {runs + 1} of n")
     print(f"Precision: {precision}")
     print(f"Recall: {recall}")
     print(f"F1-Score: {f1_score}")
@@ -88,14 +81,8 @@ def evaluator():
     for folder in os.listdir(runs_path):
         shutil.rmtree(os.path.join(runs_path, folder))
     print("file deletion completed")
-    for runs in range(amount_counter):
-        grafics, precision, recall, f1_score = evaluation(single_evaluation)
-        if not single_evaluation:
-            file_saver(runs, grafics, precision, recall, f1_score)
-            file_evaluator()
-        else:
-            file_saver(-1, grafics, precision, recall, f1_score)
-            return
+    grafics, precision, recall, f1_score = evaluation()
+    file_saver(-1, grafics, precision, recall, f1_score)
 
 
 if __name__ == '__main__':
