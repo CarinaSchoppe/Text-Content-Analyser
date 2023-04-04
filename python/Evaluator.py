@@ -4,7 +4,7 @@ import shutil
 
 from Evaluation import main as evaluation
 
-amount_counter = 100
+amount_counter = 1
 
 
 def main():

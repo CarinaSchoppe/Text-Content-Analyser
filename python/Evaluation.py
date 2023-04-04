@@ -11,6 +11,8 @@ dict_own_labels = dict()
 debug = True
 debug_full = False
 dict_ai_answers = dict()
+clocked_timer = False
+comparator = True
 
 
 def extract_values_from_file(file, path="../documents/xmi/"):
@@ -140,7 +142,6 @@ def comparison_of_results(answers_dict, semantic_dict):
 
 
 def generate_response(input_text):
-    global result
 
     prompts = [
         {"role": "system", "content": "Task description: You are a triplet extractor! Your goal is to extract information about startup investments from articles, including the name of the startup, the amount of money invested, the names of the investors, the round of financing, and the date the investment took place. Your output should be a set of triplets in the form (subject, relation, object). If there is something not specified, write XXX instead."},
@@ -164,7 +165,6 @@ def generate_response(input_text):
         model="gpt-3.5-turbo-0301",  # gpt-3.5-turbo-0301 oder gpt-4-0314 oder gpt-4
         messages=prompts,
         temperature=0,
-
     )
 
     result = completion.choices[0]["message"]["content"]
@@ -174,10 +174,11 @@ def generate_response(input_text):
     except Exception as _:
         pass
     formula = ((60 / 20) * len(prompts)) + 1
-    if debug and debug_full:
+    if debug and debug_full and clocked_timer:
         print("sleeping for", formula, "seconds")
     # make the current thread sleep for formula seconds
-    time.sleep(formula)
+    if clocked_timer:
+        time.sleep(formula)
 
 
 def main():
@@ -221,7 +222,8 @@ def main():
         print("ai dict (gpt):", len(dict_ai_answers), dict_ai_answers)
         print("semantic dict (own):", len(dict_own_labels), dict_own_labels)
         print("----------------------------------------------------------------")
-    comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
+    if comparator:
+        comparison_of_results(answers_dict=dict_ai_answers, semantic_dict=dict_own_labels)
     format_converter(dict_own_labels, "self_results")
     format_converter(dict_ai_answers, "ai_results")
     if debug:
