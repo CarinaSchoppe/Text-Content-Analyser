@@ -11,7 +11,10 @@ single_evaluation = True
 
 def file_saver(runs, grafics, precision, recall, f1_score):
     print("############################################################################################################")
-    print(f"Run {runs + 1} of {amount_counter}")
+    if single_evaluation:
+        print(f"Run {runs + 1} of n")
+    else:
+        print(f"Run {runs + 1} of {amount_counter}")
     print(f"Precision: {precision}")
     print(f"Recall: {recall}")
     print(f"F1-Score: {f1_score}")

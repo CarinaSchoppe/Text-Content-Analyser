@@ -268,7 +268,7 @@ def evaluate(single):
             time.sleep(20)
             file_deleter()
             from Evaluator import file_saver as eval_file_saver
-            eval_file_saver(index, grafics, precision_mean, recall_mean, f1_score_mean)
+            eval_file_saver(index, grafics, precision, recall, f1_score)
             time.sleep(20)
         precision_mean /= len(combined_dict)
         recall_mean /= len(combined_dict)
